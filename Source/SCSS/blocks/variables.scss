@@ -1,0 +1,35 @@
+// fonts
+
+@mixin text-regular {
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+@mixin text-semiBold {
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+@mixin text-bold {
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+// Display-width
+
+$display-xs-min: 0;
+$display-sm-min: 576px;
+$display-sm-max: $display-sm-min - 1px;
+$display-md-min: 768px;
+$display-md-max: $display-md-min - 1px;
+$display-lg-min: 992px;
+$display-lg-max: $display-lg-min - 1px;
+$display-xl-min: 1200px;
+$display-xl-max: $display-xl-min - 1px;
+$display-xxl-min: 1400px;
+$display-xxl-max: $display-xxl-min - 1px;
+
+// colors
+
+$main-color: #ff7931;
+$text-main-color: #48494d;
