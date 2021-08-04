@@ -1,0 +1,33 @@
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: $main-color;
+    background: rgba(247, 245, 246, 0.8);
+
+    &__container {
+        min-height: 100px;
+    }
+
+    &__phone {
+        @include text-title;
+    }
+
+    &__social {
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &--whatsapp {
+            background-image: url("../../img/SVG/whatsapp.svg");
+        }
+
+        &--skype {
+            background-image: url("../../img/SVG/skype.svg");
+        }
+    }
+}

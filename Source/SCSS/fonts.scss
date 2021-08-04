@@ -1,29 +1,29 @@
 @font-face {
-    font-family: 'Barlow';
+    font-family: 'Helvetica Neue Cyr';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-display: swap;
     src: 
-        url('../fonts/Barlow-Regular.woff') format('woff'),
-        url('../fonts/Barlow-Regular.woff2') format("woff2");
+        url('../fonts/helveticaneuecyr-light.woff') format('woff'),
+        url('../fonts/helveticaneuecyr-light.woff2') format("woff2");
 }
 
 @font-face {
-    font-family: 'Barlow';
+    font-family: 'Helvetica Neue Cyr';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-display: swap;
     src: 
-        url('../fonts/Barlow-SemiBold.woff') format('woff'),
-        url('../fonts/Barlow-SemiBold.woff2') format("woff2");
+        url('../fonts/helveticaneuecyr-medium.woff') format('woff'),
+        url('../fonts/helveticaneuecyr-medium.woff2') format("woff2");
 }
 
 @font-face {
-    font-family: 'Barlow';
+    font-family: 'Helvetica Neue Cyr';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: 
-        url('../fonts/Barlow-Bold.woff') format('woff'),
-        url('../fonts/Barlow-Bold.woff2') format("woff2");
+        url('../fonts/helveticaneuecyr-bold.woff') format('woff'),
+        url('../fonts/helveticaneuecyr-bold.woff2') format("woff2");
 }

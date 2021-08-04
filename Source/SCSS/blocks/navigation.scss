@@ -1,0 +1,9 @@
+.navigation {
+    @include text-medium;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 29px;
+        }
+    }
+}

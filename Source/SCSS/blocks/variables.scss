@@ -1,18 +1,18 @@
 // fonts
 
 @mixin text-regular {
-    font-family: 'Barlow', Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-family: 'Helvetica Neue Cyr', Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
 
-@mixin text-semiBold {
-    font-family: 'Barlow', Arial, Helvetica, sans-serif;
-    font-weight: 600;
+@mixin text-medium {
+    font-family: 'Helvetica Neue Cyr', Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
-@mixin text-bold {
-    font-family: 'Barlow', Arial, Helvetica, sans-serif;
-    font-weight: 600;
+@mixin text-title {
+    font-family: 'Helvetica Neue Cyr', Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 // Display-width
@@ -31,5 +31,5 @@ $display-xxl-max: $display-xxl-min - 1px;
 
 // colors
 
-$main-color: #ff7931;
+$main-color: #70231c;
 $text-main-color: #48494d;
