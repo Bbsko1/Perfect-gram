@@ -1,0 +1,16 @@
+.pluses-block {
+    &__title {
+        @include text-title;
+
+        font-size: 40px;
+
+        &--main {
+            font-size: 46px;
+        }
+    }
+
+    &__text {
+        margin: 40px 0;
+        line-height: 1.4;
+    }
+}
