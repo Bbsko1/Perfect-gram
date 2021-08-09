@@ -1,0 +1,7 @@
+.online-training {
+    margin-top: 80px;
+
+    @media (max-width: $display-md-max) {
+        margin-top: 15px;
+    }
+}

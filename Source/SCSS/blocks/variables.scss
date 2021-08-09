@@ -15,6 +15,10 @@
     font-weight: 700;
 }
 
+@mixin main-gradient {
+    background: linear-gradient(180deg, #ffe175 0%, #ffc01b 100%);
+}
+
 // Display-width
 
 $display-xs-min: 0;

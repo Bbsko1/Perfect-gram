@@ -9,6 +9,7 @@
     color: $main-color;
     text-align: center;
     background: linear-gradient(180deg, #ffe175 0%, #ffc01b 100%);
+    border: none;
     border-radius: 8px;
 
     @media (max-width: $display-sm-max) {
