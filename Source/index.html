@@ -19,33 +19,56 @@
                             alt="Логотип" width="130" height="85">
                     </picture>
                 </a>
-                <nav class="navigation">
-                    <ul class="navigation__list d-flex flex-wrap">
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">О нас</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Курсы</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Наш справочник</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Спецпредложения</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Отзывы</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Цены</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
+                <button class="header__burger d-block d-xl-none">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <div class="header__menu">
+                    <nav class="navigation">
+                        <ul class="navigation__list d-flex flex-column flex-xl-row flex-wrap">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">О нас</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Курсы</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Наш справочник</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Спецпредложения</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Отзывы</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Цены</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__menu-social d-xl-none">
+                        <h4 class="header__menu-social-title">Мы в социальных сетях!</h4>
+                        <div class="header__menu-social-wrap d-flex justify-content-between">
+                            <a class="header__menu-social-icon header__menu-social-icon--facebook" href="#">
+                                <span class="visually-hidden">facebook</span>
+                            </a>
+                            <a class="header__menu-social-icon header__menu-social-icon--instagram" href="#">
+                                <span class="visually-hidden">instagram</span>
+                            </a>
+                            <a class="header__menu-social-icon header__menu-social-icon--vk" href="#">
+                                <span class="visually-hidden">vkontakte</span>
+                            </a>
+                        </div>
+                        <div class="header__contact-menu">
+                            <p>Телефон</p>
+                            <a class="header__contact-phone" href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="header__contacts d-flex align-items-center">
-                    <a class="header__phone" href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
+                    <a class="header__phone d-none d-xl-block" href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
                     <a class="header__social header__social--whatsapp" href="#"><span
                             class="visually-hidden">Whatsapp</span></a>
                     <a class="header__social header__social--skype" href="#"><span
@@ -402,9 +425,15 @@
                         <div class="footer__social">
                             <h4 class="footer__social-title">Мы в социальных сетях!</h4>
                             <div class="footer__social-wrap d-flex justify-content-between">
-                                <a class="footer__social-icon footer__social-icon--facebook" href="#"></a>
-                                <a class="footer__social-icon footer__social-icon--instagram" href="#"></a>
-                                <a class="footer__social-icon footer__social-icon--vk" href="#"></a>
+                                <a class="footer__social-icon footer__social-icon--facebook" href="#">
+                                    <span class="visually-hidden">facebook</span>
+                                </a>
+                                <a class="footer__social-icon footer__social-icon--instagram" href="#">
+                                    <span class="visually-hidden">instagram</span>
+                                </a>
+                                <a class="footer__social-icon footer__social-icon--vk" href="#">
+                                    <span class="visually-hidden">vkontakte</span>
+                                </a>
                             </div>
                         </div>
                     </div>

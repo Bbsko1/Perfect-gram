@@ -1,9 +1,23 @@
 .navigation {
     @include text-medium;
 
+    @media (max-width: $display-xl-max) {
+        font-size: 20px;
+    }
+
     &__item {
         &:not(:last-child) {
             margin-right: 29px;
+
+            @media (max-width: $display-xl-max) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
         }
+    }
+
+    &__link {
+        display: block;
+        padding: 5px;
     }
 }
