@@ -1,0 +1,39 @@
+.unique-courses {
+    margin-bottom: 70px;
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+    &__photo {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 4px 4px 9px rgba(44, 43, 43, 0.08);
+    }
+
+    &__figcaption {
+        @include text-medium;
+
+        margin-top: 20px;
+        font-size: 22px;
+        color: $main-color;
+
+        @media (max-width: $display-lg-max) {
+            font-size: 20px;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: transparent;
+    }
+}

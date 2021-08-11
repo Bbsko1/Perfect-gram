@@ -1,0 +1,47 @@
+.courses-list {
+    margin-bottom: 80px;
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+    &__item {
+        position: relative;
+        height: 100%;
+        padding: 45px 10px;
+        margin: 10px 0;
+        background: #fff;
+        border: 4px solid #ffe074;
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px rgba(255, 192, 27, 0.2);
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        color: $main-color;
+        text-align: center;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: transparent;
+    }
+
+    &__price {
+        @include text-title;
+
+        margin: 35px 0;
+        font-size: 45px;
+        color: $main-color;
+        text-align: center;
+    }
+
+    &__desc {
+        font-size: 17px;
+        text-align: center;
+    }
+}
