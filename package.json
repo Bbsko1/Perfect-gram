@@ -19,6 +19,7 @@
     "gulp-stylelint": "^13.0.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
+    "jquery": "^3.6.0",
     "postcss": "^8.2.10",
     "stylelint": "^13.13.1",
     "stylelint-config-recess-order": "^2.4.0",

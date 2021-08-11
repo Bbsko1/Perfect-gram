@@ -1,10 +1,10 @@
 .pluses-block {
+    @media (max-width: $display-md-max) {
+        max-width: 470px;
+    }
+
     &__title {
         @include text-title;
-
-        &--main {
-            font-size: 46px;
-        }
     }
 
     &__text {

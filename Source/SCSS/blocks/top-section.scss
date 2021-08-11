@@ -3,6 +3,10 @@
     padding-top: 290px;
     background-color: $background-color;
 
+    @media (max-width: $display-md-max) {
+        padding-top: 80px;
+    }
+
     &::after {
         position: absolute;
         bottom: -100px;
@@ -20,14 +24,45 @@
         position: absolute;
         top: -120px;
         right: -105px;
+        max-height: 100%;
+
+        @media (max-width: $display-lg-max) {
+            top: -60px;
+        }
+
+        @media (max-width: $display-md-max) {
+            position: static;
+        }
+    }
+
+    &__img {
+        width: 80vw;
+        max-width: 1026px;
+
+        @media (max-width: $display-md-max) {
+            width: 100%;
+        }
     }
 
     &__title {
         max-width: 590px;
+
+        @media (max-width: $display-md-max) {
+            margin-top: 26px;
+            font-size: 29px;
+
+            & br {
+                display: none;
+            }
+        }
     }
 
     &__bottom {
         margin-top: 160px;
+
+        @media (max-width: $display-lg-max) {
+            margin-top: 70px;
+        }
     }
 
     &__text {

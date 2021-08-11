@@ -1,0 +1,136 @@
+.promo {
+    padding: 80px 0;
+
+    &__bottom-slider {
+        margin-top: 70px;
+    }
+
+    &__link {
+        @include text-title;
+
+        display: block;
+        width: 180px;
+        height: 210px;
+        padding: 20px;
+        font-size: 20px;
+        color: $main-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s;
+
+        &--graduate {
+            padding: 20px 40px 20px 12px;
+            background-image: url("../../img/img/graduate@1x.png"),
+                linear-gradient(180deg, #ffe175 0%, #ffc01b 100%);
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-size: auto;
+        }
+
+        &--news {
+            text-align: center;
+            background-image: url("../../img/img/promo-slide-books@1x.png");
+
+            @media (min-resolution: 2dppx) {
+                background-image: url("../../img/img/promo-slide-books@2x.png");
+            }
+        }
+
+        &--kid {
+            background-image: url("../../img/img/promo-slide-kid@1x.png");
+
+            @media (min-resolution: 2dppx) {
+                background-image: url("../../img/img/promo-slide-kid@2x.png");
+            }
+        }
+
+        &--prices {
+            background-image: url("../../img/img/promo-slide-prices@1x.png");
+
+            @media (min-resolution: 2dppx) {
+                background-image: url("../../img/img/promo-slide-prices@2x.png");
+            }
+        }
+
+        &--slogan {
+            width: 336px;
+            background-image: url("../../img/img/promo-slide-slogan@1x.png");
+
+            @media (min-resolution: 2dppx) {
+                background-image: url("../../img/img/promo-slide-slogan@2x.png");
+            }
+        }
+    }
+}
+
+// promo-top-slider
+
+.promo__top-slider {
+    position: relative;
+
+    & .slick-track {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .slick-list {
+        overflow: hidden;
+    }
+
+    & .slick-arrow {
+        position: absolute;
+        bottom: -20px;
+        width: 42px;
+        height: 16px;
+        font-size: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    & .slick-prev {
+        left: 50%;
+        background-image: url("data:image/svg+xml,%3Csvg width='42' height='16' viewBox='0 0 42 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.351486 8.70711C-0.0390358 8.31658 -0.0390358 7.68342 0.351486 7.29289L6.71545 0.928932C7.10597 0.538408 7.73914 0.538408 8.12966 0.928932C8.52019 1.31946 8.52019 1.95262 8.12966 2.34315L2.47281 8L8.12966 13.6569C8.52019 14.0474 8.52019 14.6805 8.12966 15.0711C7.73914 15.4616 7.10597 15.4616 6.71545 15.0711L0.351486 8.70711ZM41.0586 9H1.05859V7H41.0586V9Z' fill='%2370231C'/%3E%3C/svg%3E%0A");
+    }
+
+    & .slick-next {
+        left: 60%;
+        background-image: url("data:image/svg+xml,%3Csvg width='42' height='16' viewBox='0 0 42 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40.7657 8.70711C41.1562 8.31658 41.1562 7.68342 40.7657 7.29289L34.4017 0.928932C34.0112 0.538408 33.3781 0.538408 32.9875 0.928932C32.597 1.31946 32.597 1.95262 32.9875 2.34315L38.6444 8L32.9875 13.6569C32.597 14.0474 32.597 14.6805 32.9875 15.0711C33.3781 15.4616 34.0112 15.4616 34.4017 15.0711L40.7657 8.70711ZM0.0585938 9H40.0586V7H0.0585938V9Z' fill='%2370231C'/%3E%3C/svg%3E%0A");
+    }
+}
+
+// promo-bottom-slider
+
+.promo__bottom-slider {
+    & .slick-track {
+        display: flex;
+        width: 100%;
+    }
+
+    & .slick-list {
+        width: 100%;
+        padding: 20px 40px 20px 17px;
+        overflow: hidden;
+    }
+
+    .slick-slide {
+        margin-right: 10px;
+        transition: 0.3s;
+
+        & + .slick-current {
+            margin-left: 25px;
+        }
+    }
+
+    .slick-current {
+        & .promo__link {
+            transform: scale(1.15, 1.2);
+        }
+
+        & + .slick-slide {
+            margin-left: 25px;
+        }
+    }
+}

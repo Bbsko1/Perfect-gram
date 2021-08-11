@@ -4,6 +4,11 @@
     margin-top: 190px;
     background-color: $background-color;
 
+    @media (max-width: $display-sm-max) {
+        padding-top: 45px;
+        margin-top: 75px;
+    }
+
     &::before {
         position: absolute;
         top: -110px;

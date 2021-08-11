@@ -2,17 +2,68 @@
     padding-bottom: 100px;
     background-color: $background-color;
 
+    &__container {
+        @media (max-width: $display-sm-max) {
+            padding: 0;
+        }
+    }
+
     &__title {
         max-width: 660px;
+        padding: 0 15px;
         margin: 0 auto;
-        font-size: 40px;
         color: $main-color;
         text-align: center;
+    }
+
+    &__wrap {
+        @media (max-width: $display-xl-max) {
+            margin-right: -65px;
+            margin-left: -65px;
+            overflow-x: auto;
+        }
+
+        @media (max-width: $display-lg-max) {
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
     }
 
     &__list {
         margin: 35px 0;
         font-size: 14px;
+    }
+
+    &__item {
+        flex-shrink: 0;
+
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        &:first-child {
+            @media (max-width: $display-xl-max) {
+                padding-left: 65px;
+            }
+
+            @media (max-width: $display-sm-max) {
+                padding-left: 80px;
+            }
+        }
+
+        &:last-child {
+            @media (max-width: $display-xl-max) {
+                padding-right: 65px;
+            }
+
+            @media (max-width: $display-sm-max) {
+                padding-right: 80px;
+            }
+        }
     }
 
     &__link {
@@ -44,5 +95,104 @@
                 opacity: 1;
             }
         }
+    }
+}
+
+// Настройка слайдера programs
+
+.programs__slider {
+    position: relative;
+
+    @media (max-width: $display-md-max) {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    & .slick-track {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .slick-list {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+        overflow: hidden;
+    }
+
+    & .programs__slider-item {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    & .slick-slide {
+        display: flex;
+        justify-content: center;
+        margin: 0 10px;
+        opacity: 0;
+        transition: 0.4s;
+
+        @media (max-width: $display-md-max) {
+            margin: 0 5px;
+            opacity: 1;
+        }
+
+        & > div {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    & .slick-active {
+        opacity: 1;
+    }
+
+    & .slick-center {
+        position: relative;
+        z-index: 2;
+        margin: 0 -40px;
+
+        @media (max-width: $display-md-max) {
+            margin: 0 10px;
+        }
+
+        & .program-card {
+            @include main-gradient;
+
+            transform: scaleY(1.1);
+
+            & * {
+                transform: scaleY(0.9);
+            }
+
+            @media (max-width: $display-md-max) {
+                opacity: 1;
+            }
+        }
+
+        & .program-card__title-selection {
+            color: #fff;
+            background: transparent;
+            -webkit-text-fill-color: inherit;
+        }
+    }
+
+    & .slick-arrow {
+        position: absolute;
+        bottom: -20px;
+        width: 42px;
+        height: 16px;
+        font-size: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    & .slick-prev {
+        left: 30%;
+        background-image: url("data:image/svg+xml,%3Csvg width='42' height='16' viewBox='0 0 42 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.351486 8.70711C-0.0390358 8.31658 -0.0390358 7.68342 0.351486 7.29289L6.71545 0.928932C7.10597 0.538408 7.73914 0.538408 8.12966 0.928932C8.52019 1.31946 8.52019 1.95262 8.12966 2.34315L2.47281 8L8.12966 13.6569C8.52019 14.0474 8.52019 14.6805 8.12966 15.0711C7.73914 15.4616 7.10597 15.4616 6.71545 15.0711L0.351486 8.70711ZM41.0586 9H1.05859V7H41.0586V9Z' fill='%2370231C'/%3E%3C/svg%3E%0A");
+    }
+
+    & .slick-next {
+        right: 30%;
+        background-image: url("data:image/svg+xml,%3Csvg width='42' height='16' viewBox='0 0 42 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40.7657 8.70711C41.1562 8.31658 41.1562 7.68342 40.7657 7.29289L34.4017 0.928932C34.0112 0.538408 33.3781 0.538408 32.9875 0.928932C32.597 1.31946 32.597 1.95262 32.9875 2.34315L38.6444 8L32.9875 13.6569C32.597 14.0474 32.597 14.6805 32.9875 15.0711C33.3781 15.4616 34.0112 15.4616 34.4017 15.0711L40.7657 8.70711ZM0.0585938 9H40.0586V7H0.0585938V9Z' fill='%2370231C'/%3E%3C/svg%3E%0A");
     }
 }

@@ -63,12 +63,14 @@
                         </div>
                         <div class="header__contact-menu">
                             <p>Телефон</p>
-                            <a class="header__contact-phone" href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
+                            <a class="header__contact-phone"
+                                href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
                         </div>
                     </div>
                 </div>
                 <div class="header__contacts d-flex align-items-center">
-                    <a class="header__phone d-none d-xl-block" href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
+                    <a class="header__phone d-none d-xl-block"
+                        href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
                     <a class="header__social header__social--whatsapp" href="#"><span
                             class="visually-hidden">Whatsapp</span></a>
                     <a class="header__social header__social--skype" href="#"><span
@@ -79,13 +81,16 @@
         <main class="page__main">
             <section class="top-section">
                 <div class="container-xl">
-                    <div class="top-section__photo">
-                        <img src="img/img/top@1x.png" alt="Семья">
-                    </div>
+                    <picture class="top-section__photo">
+                        <source media="(max-width: 767px)"
+                            srcset="img/img/top-section-photo-mobile@1x.png 1x, img/img/top-section-photo-mobile@2x.png 2x">
+                        <img class="top-section__img" src="img/img/top@1x.png" srcset="img/img/top@2x.png 2x"
+                            alt="Семья">
+                    </picture>
                     <h1 class="visually-hidden">Perfect Grammar - школа иностранных языков</h1>
-                    <div class="top-section__top row">
-                        <div class="pluses-block col-7">
-                            <h2 class="pluses-block__title pluses-block__title--main top-section__title">Учись
+                    <div class="top-section__top row d-flex justify-content-center d-md-block px-3">
+                        <div class="pluses-block col-12 col-md-7 p-0">
+                            <h2 class="pluses-block__title pluses-block__title--main top-section__title h2">Учись
                                 говорить<br>
                                 на английском языке<br>
                                 по авторским методикам</h2>
@@ -138,11 +143,10 @@
                                     устраняем их. Наши учителя — профессионалы, которые умеют найти подход к
                                     каждому
                                     ученику.</p>
-                                <a class="pluses-block__button button d-none d-sm-inline-block" href="#">Выбрать
+                                <a class="pluses-block__button button d-none d-sm-inline-block mb-4" href="#">Выбрать
                                     программу</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -151,10 +155,13 @@
                     <div class="section__inner section__inner--max">
                         <h3 class="section__title h3">Мы придерживаемся лучшей методике обучения</h3>
                     </div>
-                    <picture class="section__photo best-practices__photo">
-                        <img class="section__img" src="img/img/best-practices@1x.png"
-                            srcset="img/img/best-practices@2x.png 2x" width="582" height="568" alt="Лучшие практики">
-                    </picture>
+                    <div class="section__photo-wrap">
+                        <picture class="section__photo best-practices__photo">
+                            <img class="section__img" src="img/img/best-practices@1x.png"
+                                srcset="img/img/best-practices@2x.png 2x" width="582" height="568"
+                                alt="Лучшие практики">
+                        </picture>
+                    </div>
                     <div class="section__wrapper section__wrapper--max">
                         <p class="section__text">
                             Курсы обучения иностранным языкам «Perfect grammar» – это современный и мощный языковой
@@ -188,11 +195,13 @@
                             Обучайтесь онлайн
                         </h3>
                     </div>
-                    <picture class="section__photo section__photo--left">
-                        <img class="section__img" src="img/img/online-training-section@1x.png"
-                            srcset="img/img/online-training-section@2x.png 2x" width="582" height="568"
-                            alt="Лучшие практики">
-                    </picture>
+                    <div class="section__photo-wrap section__photo-wrap--left">
+                        <picture class="section__photo">
+                            <img class="section__img" src="img/img/online-training-section@1x.png"
+                                srcset="img/img/online-training-section@2x.png 2x" width="582" height="568"
+                                alt="Лучшие практики">
+                        </picture>
+                    </div>
                     <div class="section__wrapper">
                         <p class="section__text section__text--mini">
                             Вы можете заниматься в удобной для вас обстановке - у себя дома или в офисе. Вместо того,
@@ -211,10 +220,13 @@
                     <div class="section__inner">
                         <h3 class="section__title section__title--mini section__title--main-color h3">Или офлайн</h3>
                     </div>
-                    <picture class="section__photo section__photo">
-                        <img class="section__img" src="img/img/offline-training@1x.png"
-                            srcset="img/img/offline-training@2x.png 2x" width="582" height="568" alt="Лучшие практики">
-                    </picture>
+                    <div class="section__photo-wrap">
+                        <picture class="section__photo section__photo">
+                            <img class="section__img" src="img/img/offline-training@1x.png"
+                                srcset="img/img/offline-training@2x.png 2x" width="582" height="568"
+                                alt="Лучшие практики">
+                        </picture>
+                    </div>
                     <div class="section__wrapper">
                         <p class="section__text section__text--mini">
                             Личный контакт с преподавателем и одногруппниками, полноценная работа в группе, диалоги,
@@ -231,10 +243,13 @@
                             Готовые видео уроки
                         </h3>
                     </div>
-                    <picture class="section__photo section__photo--left">
-                        <img class="section__img" src="img/img/video-training@1x.png"
-                            srcset="img/img/video-training@2x.png 2x" width="582" height="568" alt="Лучшие практики">
-                    </picture>
+                    <div class="section__photo-wrap section__photo-wrap--left">
+                        <picture class="section__photo">
+                            <img class="section__img" src="img/img/video-training@1x.png"
+                                srcset="img/img/video-training@2x.png 2x" width="582" height="568"
+                                alt="Лучшие практики">
+                        </picture>
+                    </div>
                     <div class="section__wrapper">
                         <p class="section__text section__text--mini">
                             С другой стороны новая модель организационной деятельности влечет за собой процесс внедрения
@@ -247,100 +262,144 @@
                 </div>
             </section>
             <section class="programs">
-                <div class="container-xl">
+                <div class="programs__container container-xl">
                     <h3 class="programs__title h3">Выберите прямо сейчас подходящую для вас программу</h3>
-                    <ul class="programs__list d-flex justify-content-between flex-wrap">
-                        <li class="programs__item">
-                            <a class="programs__link" href="#">Для детей</a>
-                        </li>
-                        <li class="programs__item">
-                            <a class="programs__link" href="#">Для взрослых</a>
-                        </li>
-                        <li class="programs__item">
-                            <a class="programs__link" href="#">Подготовка к сдаче экзаменов</a>
-                        </li>
-                        <li class="programs__item">
-                            <a class="programs__link" href="#">Индивидуальные занятия</a>
-                        </li>
-                        <li class="programs__item">
-                            <a class="programs__link" href="#">Испанский язык</a>
-                        </li>
-                        <li class="programs__item">
-                            <a class="programs__link" href="#">Корпоративные клиенты</a>
-                        </li>
-                        <li class="programs__item">
-                            <a class="programs__link" href="#">Уникальные программы</a>
-                        </li>
-                    </ul>
-                    <div class="programs__wrapper d-flex justify-content-between">
-                        <div class="programs__program-card program-card">
-                            <h4 class="program-card__title">
-                                <span class="program-card__title-selection">My First Grammar</span><br>
-                                Моя Первая Грамматика
-                            </h4>
-                            <div class="program-card__price">от 790₽</div>
-                            <div class="program-card__desc">
-                                <p>Дошкольники 5-7 лет</p>
-                                <p>Группа 2-4 человека</p>
+                    <div class="programs__wrap">
+                        <ul class="programs__list d-flex">
+                            <li class="programs__item">
+                                <a class="programs__link" href="#">Для детей</a>
+                            </li>
+                            <li class="programs__item">
+                                <a class="programs__link" href="#">Для взрослых</a>
+                            </li>
+                            <li class="programs__item">
+                                <a class="programs__link" href="#">Подготовка к сдаче экзаменов</a>
+                            </li>
+                            <li class="programs__item">
+                                <a class="programs__link" href="#">Индивидуальные занятия</a>
+                            </li>
+                            <li class="programs__item">
+                                <a class="programs__link" href="#">Испанский язык</a>
+                            </li>
+                            <li class="programs__item">
+                                <a class="programs__link" href="#">Корпоративные клиенты</a>
+                            </li>
+                            <li class="programs__item">
+                                <a class="programs__link" href="#">Уникальные программы</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="programs__slider">
+                        <div class="programs__slider-item">
+                            <div class="programs__program-card program-card">
+                                <a class="program-card__link" href="#">
+                                    <span class="visually-hidden">Открыть программу</span>
+                                </a>
+                                <h4 class="program-card__title">
+                                    <span class="program-card__title-selection">My First Grammar</span><br>
+                                    Моя Первая Грамматика
+                                </h4>
+                                <div class="program-card__price">от 790₽</div>
+                                <div class="program-card__desc">
+                                    <p>Дошкольники 5-7 лет</p>
+                                    <p>Группа 2-4 человека</p>
+                                </div>
+                                <ul class="program-card__list">
+                                    <li class="program-card__item">
+                                        Первые грамматические навыки;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Постановка вокабуляра;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Общение в игровой форме.
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="program-card__list">
-                                <li class="program-card__item">
-                                    Первые грамматические навыки;
-                                </li>
-                                <li class="program-card__item">
-                                    Постановка вокабуляра;
-                                </li>
-                                <li class="program-card__item">
-                                    Общение в игровой форме.
-                                </li>
-                            </ul>
                         </div>
-                        <div class="programs__program-card program-card">
-                            <h4 class="program-card__title">
-                                <span class="program-card__title-selection">Easy Hometask</span><br>
-                                Дом. Задание - В Два Счета
-                            </h4>
-                            <div class="program-card__price">от 890₽</div>
-                            <div class="program-card__desc">
-                                <p>Школьники 1-4 класс</p>
-                                <p>Группа: 3-6 чел</p>
+                        <div class="programs__slider-item">
+                            <div class="programs__program-card program-card">
+                                <a class="program-card__link" href="#">
+                                    <span class="visually-hidden">Открыть программу</span>
+                                </a>
+                                <h4 class="program-card__title">
+                                    <span class="program-card__title-selection">Easy Hometask</span><br>
+                                    Дом. Задание - В Два Счета
+                                </h4>
+                                <div class="program-card__price">от 890₽</div>
+                                <div class="program-card__desc">
+                                    <p>Школьники 1-4 класс</p>
+                                    <p>Группа: 3-6 чел</p>
+                                </div>
+                                <ul class="program-card__list">
+                                    <li class="program-card__item">
+                                        Помощь в выполнении домашней работы;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Школьная программа;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Углубленная программа по авторским методикам.
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="program-card__list">
-                                <li class="program-card__item">
-                                    Помощь в выполнении домашней работы;
-                                </li>
-                                <li class="program-card__item">
-                                    Школьная программа;
-                                </li>
-                                <li class="program-card__item">
-                                    Углубленная программа по авторским методикам.
-                                </li>
-                            </ul>
                         </div>
-                        <div class="programs__program-card program-card">
-                            <h4 class="program-card__title">
-                                <span class="program-card__title-selection">Deep Into Grammar</span><br>
-                                Углубленная Грамматика
-                            </h4>
-                            <div class="program-card__price">от 990₽</div>
-                            <div class="program-card__desc">
-                                <p>Школьники 4-5 класс</p>
-                                <p>Группа 2-6 человека</p>
+                        <div class="programs__slider-item">
+                            <div class="programs__program-card program-card">
+                                <a class="program-card__link" href="#">
+                                    <span class="visually-hidden">Открыть программу</span>
+                                </a>
+                                <h4 class="program-card__title">
+                                    <span class="program-card__title-selection">Deep Into Grammar</span><br>
+                                    Углубленная Грамматика
+                                </h4>
+                                <div class="program-card__price">от 990₽</div>
+                                <div class="program-card__desc">
+                                    <p>Школьники 4-5 класс</p>
+                                    <p>Группа 2-6 человека</p>
+                                </div>
+                                <ul class="program-card__list">
+                                    <li class="program-card__item">
+                                        Школьная программа;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Углубленная грамматика и лексика;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Структурирование и отработка пройденного материала;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Закрепление пройденных навыков.
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="program-card__list">
-                                <li class="program-card__item">
-                                    Школьная программа;
-                                </li>
-                                <li class="program-card__item">
-                                    Углубленная грамматика и лексика;
-                                </li>
-                                <li class="program-card__item">
-                                    Структурирование и отработка пройденного материала;
-                                </li>
-                                <li class="program-card__item">
-                                    Закрепление пройденных навыков.
-                                </li>
-                            </ul>
+                        </div>
+                        <div class="programs__slider-item">
+                            <div class="programs__program-card program-card">
+                                <a class="program-card__link" href="#">
+                                    <span class="visually-hidden">Открыть программу</span>
+                                </a>
+                                <h4 class="program-card__title">
+                                    <span class="program-card__title-selection">Easy Hometask</span><br>
+                                    Дом. Задание - В Два Счета
+                                </h4>
+                                <div class="program-card__price">от 890₽</div>
+                                <div class="program-card__desc">
+                                    <p>Школьники 1-4 класс</p>
+                                    <p>Группа: 3-6 чел</p>
+                                </div>
+                                <ul class="program-card__list">
+                                    <li class="program-card__item">
+                                        Помощь в выполнении домашней работы;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Школьная программа;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Углубленная программа по авторским методикам.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -351,10 +410,13 @@
                         <h3 class="section__title section__title--main-color h3">Теперь доступны курсы испанского языка!
                         </h3>
                     </div>
-                    <picture class="section__photo spanish-courses__photo">
-                        <img class="section__img" src="img/img/spanish-courses@1x.png"
-                            srcset="img/img/spanish-courses@2x.png 2x" width="582" height="568" alt="Лучшие практики">
-                    </picture>
+                    <div class="section__photo-wrap">
+                        <picture class="section__photo spanish-courses__photo">
+                            <img class="section__img" src="img/img/spanish-courses@1x.png"
+                                srcset="img/img/spanish-courses@2x.png 2x" width="582" height="568"
+                                alt="Лучшие практики">
+                        </picture>
+                    </div>
                     <div class="section__wrapper section__wrapper--max">
                         <p class="section__text">
                             Дорогие друзья!
@@ -376,6 +438,261 @@
                         </p>
                         <div class="section__box">
                             <a class="button" href="#">Подобрать курс</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section promo">
+                <div class="container-xl">
+                    <div class="promo__top-slider">
+                        <div class="promo__top-slider-item">
+                            <div class="section__container">
+                                <div class="section__inner section__inner--max">
+                                    <h3 class="section__title section__title--main-color h3">
+                                        Новости и акции
+                                    </h3>
+                                </div>
+                                <div class="section__photo-wrap section__photo-wrap--left">
+                                    <picture class="section__photo promo__photo">
+                                        <img class="section__img" src="img/img/promo@1x.png"
+                                            srcset="img/img/promo@2x.png 2x" width="582" height="568"
+                                            alt="Лучшие практики">
+                                    </picture>
+                                </div>
+                                <div class="section__wrapper section__wrapper--max">
+                                    <p class="section__text section__text--bold">
+                                        Купи 4 занятия и получи 1 бесплатно
+                                    </p>
+                                    <p class="section__text">
+                                        Задача организации, в особенности же реализация намеченных плановых заданий
+                                        способствует
+                                        подготовки и реализации новых предложений. Задача организации, в особенности же
+                                        начало
+                                        повседневной работы по формированию позиции представляет собой интересный
+                                        эксперимент
+                                        проверки форм развития.
+
+                                    </p>
+                                    <p class="section__text">
+                                        Значимость этих проблем настолько очевидна, что новая модель организационной
+                                        деятельности
+                                        требуют от нас анализа направлений прогрессивного развития.
+                                        Значимость этих проблем настолько очевидна, что постоянное
+                                        информационно-пропагандистское
+                                        обеспечение нашей деятельности обеспечивает широкому кругу (специалистов)
+                                        участие в
+                                        формировании новых предложений. Повседневная практика показывает, что рамки и
+                                        место
+                                        обучения
+                                        кадров требуют определения и уточнения
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__top-slider-item">
+                            <div class="section__container">
+                                <div class="section__inner section__inner--max">
+                                    <h3 class="section__title section__title--main-color h3">
+                                        Новости и акции
+                                    </h3>
+                                </div>
+                                <div class="section__photo-wrap section__photo-wrap--left">
+                                    <picture class="section__photo promo__photo">
+                                        <img class="section__img" src="img/img/promo@1x.png"
+                                            srcset="img/img/promo@2x.png 2x" width="582" height="568"
+                                            alt="Лучшие практики">
+                                    </picture>
+                                </div>
+                                <div class="section__wrapper section__wrapper--max">
+                                    <p class="section__text section__text--bold">
+                                        Купи 4 занятия и получи 1 бесплатно
+                                    </p>
+                                    <p class="section__text">
+                                        Задача организации, в особенности же реализация намеченных плановых заданий
+                                        способствует
+                                        подготовки и реализации новых предложений. Задача организации, в особенности же
+                                        начало
+                                        повседневной работы по формированию позиции представляет собой интересный
+                                        эксперимент
+                                        проверки форм развития.
+
+                                    </p>
+                                    <p class="section__text">
+                                        Значимость этих проблем настолько очевидна, что новая модель организационной
+                                        деятельности
+                                        требуют от нас анализа направлений прогрессивного развития.
+                                        Значимость этих проблем настолько очевидна, что постоянное
+                                        информационно-пропагандистское
+                                        обеспечение нашей деятельности обеспечивает широкому кругу (специалистов)
+                                        участие в
+                                        формировании новых предложений. Повседневная практика показывает, что рамки и
+                                        место
+                                        обучения
+                                        кадров требуют определения и уточнения
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__top-slider-item">
+                            <div class="section__container">
+                                <div class="section__inner section__inner--max">
+                                    <h3 class="section__title section__title--main-color h3">
+                                        Новости и акции
+                                    </h3>
+                                </div>
+                                <div class="section__photo-wrap section__photo-wrap--left">
+                                    <picture class="section__photo promo__photo">
+                                        <img class="section__img" src="img/img/promo@1x.png"
+                                            srcset="img/img/promo@2x.png 2x" width="582" height="568"
+                                            alt="Лучшие практики">
+                                    </picture>
+                                </div>
+                                <div class="section__wrapper section__wrapper--max">
+                                    <p class="section__text section__text--bold">
+                                        Купи 4 занятия и получи 1 бесплатно
+                                    </p>
+                                    <p class="section__text">
+                                        Задача организации, в особенности же реализация намеченных плановых заданий
+                                        способствует
+                                        подготовки и реализации новых предложений. Задача организации, в особенности же
+                                        начало
+                                        повседневной работы по формированию позиции представляет собой интересный
+                                        эксперимент
+                                        проверки форм развития.
+
+                                    </p>
+                                    <p class="section__text">
+                                        Значимость этих проблем настолько очевидна, что новая модель организационной
+                                        деятельности
+                                        требуют от нас анализа направлений прогрессивного развития.
+                                        Значимость этих проблем настолько очевидна, что постоянное
+                                        информационно-пропагандистское
+                                        обеспечение нашей деятельности обеспечивает широкому кругу (специалистов)
+                                        участие в
+                                        формировании новых предложений. Повседневная практика показывает, что рамки и
+                                        место
+                                        обучения
+                                        кадров требуют определения и уточнения
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__top-slider-item">
+                            <div class="section__container">
+                                <div class="section__inner section__inner--max">
+                                    <h3 class="section__title section__title--main-color h3">
+                                        Новости и акции
+                                    </h3>
+                                </div>
+                                <div class="section__photo-wrap section__photo-wrap--left">
+                                    <picture class="section__photo promo__photo">
+                                        <img class="section__img" src="img/img/promo@1x.png"
+                                            srcset="img/img/promo@2x.png 2x" width="582" height="568"
+                                            alt="Лучшие практики">
+                                    </picture>
+                                </div>
+                                <div class="section__wrapper section__wrapper--max">
+                                    <p class="section__text section__text--bold">
+                                        Купи 4 занятия и получи 1 бесплатно
+                                    </p>
+                                    <p class="section__text">
+                                        Задача организации, в особенности же реализация намеченных плановых заданий
+                                        способствует
+                                        подготовки и реализации новых предложений. Задача организации, в особенности же
+                                        начало
+                                        повседневной работы по формированию позиции представляет собой интересный
+                                        эксперимент
+                                        проверки форм развития.
+
+                                    </p>
+                                    <p class="section__text">
+                                        Значимость этих проблем настолько очевидна, что новая модель организационной
+                                        деятельности
+                                        требуют от нас анализа направлений прогрессивного развития.
+                                        Значимость этих проблем настолько очевидна, что постоянное
+                                        информационно-пропагандистское
+                                        обеспечение нашей деятельности обеспечивает широкому кругу (специалистов)
+                                        участие в
+                                        формировании новых предложений. Повседневная практика показывает, что рамки и
+                                        место
+                                        обучения
+                                        кадров требуют определения и уточнения
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__top-slider-item">
+                            <div class="section__container">
+                                <div class="section__inner section__inner--max">
+                                    <h3 class="section__title section__title--main-color h3">
+                                        Новости и акции
+                                    </h3>
+                                </div>
+                                <div class="section__photo-wrap section__photo-wrap--left">
+                                    <picture class="section__photo promo__photo">
+                                        <img class="section__img" src="img/img/promo@1x.png"
+                                            srcset="img/img/promo@2x.png 2x" width="582" height="568"
+                                            alt="Лучшие практики">
+                                    </picture>
+                                </div>
+                                <div class="section__wrapper section__wrapper--max">
+                                    <p class="section__text section__text--bold">
+                                        Купи 4 занятия и получи 1 бесплатно
+                                    </p>
+                                    <p class="section__text">
+                                        Задача организации, в особенности же реализация намеченных плановых заданий
+                                        способствует
+                                        подготовки и реализации новых предложений. Задача организации, в особенности же
+                                        начало
+                                        повседневной работы по формированию позиции представляет собой интересный
+                                        эксперимент
+                                        проверки форм развития.
+
+                                    </p>
+                                    <p class="section__text">
+                                        Значимость этих проблем настолько очевидна, что новая модель организационной
+                                        деятельности
+                                        требуют от нас анализа направлений прогрессивного развития.
+                                        Значимость этих проблем настолько очевидна, что постоянное
+                                        информационно-пропагандистское
+                                        обеспечение нашей деятельности обеспечивает широкому кругу (специалистов)
+                                        участие в
+                                        формировании новых предложений. Повседневная практика показывает, что рамки и
+                                        место
+                                        обучения
+                                        кадров требуют определения и уточнения
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-xl">
+                    <div class="promo__bottom-slider">
+                        <div class="promo__bottom-slider-item">
+                            <a class="promo__link promo__link--graduate" data-slide="0">
+                                ЕГЭ вместе с нами проще
+                            </a>
+                        </div>
+                        <div class="promo__bottom-slider-item">
+                            <a class="promo__link promo__link--news" data-slide="1">
+                                Последние новости
+                            </a>
+                        </div>
+                        <div class="promo__bottom-slider-item">
+                            <a class="promo__link promo__link--kid" data-slide="2">
+
+                            </a>
+                        </div>
+                        <div class="promo__bottom-slider-item">
+                            <a class="promo__link promo__link--prices" data-slide="3">
+
+                            </a>
+                        </div>
+                        <div class="promo__bottom-slider-item">
+                            <a class="promo__link promo__link--slogan" data-slide="4">
+
+                            </a>
                         </div>
                     </div>
                 </div>
