@@ -70,7 +70,7 @@ input::-webkit-inner-spin-button {
 .h2 {
     font-size: 46px;
 
-    @media (max-width: $display-sm-max) {
+    @media (max-width: $display-md-max) {
         font-size: 36px;
     }
 }
@@ -78,7 +78,7 @@ input::-webkit-inner-spin-button {
 .h3 {
     font-size: 40px;
 
-    @media (max-width: $display-sm-max) {
+    @media (max-width: $display-md-max) {
         font-size: 30px;
     }
 }

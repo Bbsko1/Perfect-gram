@@ -1,0 +1,61 @@
+.background-section {
+    position: relative;
+    background-color: $background-color;
+
+    &--top-wave {
+        padding-top: 70px 0;
+        margin-top: 190px;
+
+        @media (max-width: $display-sm-max) {
+            padding-top: 45px;
+            margin-top: 75px;
+        }
+
+        &::before {
+            position: absolute;
+            top: -110px;
+            left: 0;
+            width: 100%;
+            height: 110px;
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg width='1440' height='1570' viewBox='0 0 1440 1570' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M935.309 53.7179C599.214 -61.3103 71.7299 34.837 -150 97.2893V1570H1604V283.85C1604 -78.6385 1355.43 197.503 935.309 53.7179Z' fill='%23F7F5F6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+
+            @media (max-width: $display-sm-max) {
+                top: -50px;
+                height: 50px;
+                background-image: url("data:image/svg+xml,%3Csvg width='320' height='391' viewBox='0 0 320 391' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M205.78 13.3782C122.236 -15.269 -8.88356 8.67599 -64 24.2294V391H372V70.6914C372 -19.5845 310.212 49.1871 205.78 13.3782Z' fill='%23F7F5F6'/%3E%3C/svg%3E%0A");
+                background-size: cover;
+            }
+        }
+    }
+
+    &--bottom-wave {
+        padding-bottom: 60px;
+        margin-bottom: 120px;
+
+        @media (max-width: $display-sm-max) {
+            padding-bottom: 30px;
+        }
+
+        &::after {
+            position: absolute;
+            bottom: -110px;
+            left: 0;
+            width: 100%;
+            height: 110px;
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg width='1440' height='1563' viewBox='0 0 1440 1563' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1597.71 1474.48L1604 1472.71V0H-150C-150 0 -174.5 983.511 -174.5 1346C-174.5 1708.49 328.38 1362.21 748.5 1506C1081.43 1619.94 1376.65 1536.77 1597.71 1474.48Z' fill='%23F7F5F6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 50% 100%;
+
+            @media (max-width: $display-sm-max) {
+                bottom: -50px;
+                height: 50px;
+                background-image: url("data:image/svg+xml,%3Csvg width='320' height='391' viewBox='0 0 320 391' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M205.78 377.622C122.236 406.269 -8.88356 382.324 -64 366.771V0H372V320.309C372 410.585 310.212 341.813 205.78 377.622Z' fill='%23F7F5F6'/%3E%3C/svg%3E%0A");
+                background-size: cover;
+            }
+        }
+    }
+}
