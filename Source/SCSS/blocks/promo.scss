@@ -1,10 +1,6 @@
 .promo {
     padding: 80px 0;
 
-    &__bottom-slider {
-        margin-top: 70px;
-    }
-
     &__link {
         @include text-title;
 
@@ -21,13 +17,37 @@
         border-radius: 10px;
         transition: 0.3s;
 
+        @media (max-width: $display-sm-max) {
+            width: 84px;
+            height: 98px;
+            padding: 10px;
+            font-size: 12px;
+        }
+
         &--graduate {
+            position: relative;
             padding: 20px 40px 20px 12px;
-            background-image: url("../../img/img/graduate@1x.png"),
-                linear-gradient(180deg, #ffe175 0%, #ffc01b 100%);
+            background-image: linear-gradient(180deg, #ffe175 0%, #ffc01b 100%);
             background-repeat: no-repeat;
             background-position: 100% 100%;
             background-size: auto;
+
+            &::after {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 63%;
+                height: 72%;
+                content: "";
+                background-image: url("../../img/img/graduate@1x.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+
+            @media (max-width: $display-sm-max) {
+                padding: 10px;
+            }
         }
 
         &--news {
@@ -61,6 +81,11 @@
 
             @media (min-resolution: 2dppx) {
                 background-image: url("../../img/img/promo-slide-slogan@2x.png");
+            }
+
+            @media (max-width: $display-sm-max) {
+                width: 158px;
+                height: 98px;
             }
         }
     }
@@ -104,6 +129,8 @@
 // promo-bottom-slider
 
 .promo__bottom-slider {
+    margin-top: 70px;
+
     & .slick-track {
         display: flex;
         width: 100%;
@@ -111,26 +138,32 @@
 
     & .slick-list {
         width: 100%;
-        padding: 20px 40px 20px 17px;
+        padding: 20px 40px 20px 25px;
         overflow: hidden;
     }
 
-    .slick-slide {
+    & .slick-slide {
         margin-right: 10px;
         transition: 0.3s;
-
-        & + .slick-current {
-            margin-left: 25px;
-        }
     }
 
     .slick-current {
+        margin-left: 25px;
+
+        @media (max-width: $display-sm-max) {
+            margin-left: 10px;
+        }
+
         & .promo__link {
             transform: scale(1.15, 1.2);
         }
 
         & + .slick-slide {
             margin-left: 25px;
+
+            @media (max-width: $display-sm-max) {
+                margin-left: 10px;
+            }
         }
     }
 }
