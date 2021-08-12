@@ -8,4 +8,17 @@
     &__main {
         overflow: hidden;
     }
+
+    &__navigation-link {
+        transition: 0.3s;
+
+        &--active {
+            opacity: 0.6;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+        }
+    }
 }

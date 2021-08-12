@@ -74,12 +74,12 @@ $('.reviews__top-slider').slick({
     responsive: [{
         breakpoint: 992,
         settings: {
-            arrows: false
+            arrows: false,
         },
         breakpoint: 576,
         settings: {
             accessibility: false,
-            arrows: false,
+            arrows: true,
             centerPadding: "20px",
             slidesToShow: 1,
         },
@@ -93,4 +93,10 @@ $('.reviews__bottom-slider').slick({
     infinite: true,
     asNavFor: '.reviews__top-slider',
     arrows: false,
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+            arrows: true,
+        },
+    }, ]
 });

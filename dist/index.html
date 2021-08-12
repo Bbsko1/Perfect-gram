@@ -26,10 +26,10 @@
                     <nav class="navigation">
                         <ul class="navigation__list d-flex flex-column flex-xl-row flex-wrap">
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">О нас</a>
+                                <a class="navigation__link" href="about.html">О нас</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Курсы</a>
+                                <a class="navigation__link" href="courses.html">Курсы</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="#">Наш справочник</a>
@@ -41,7 +41,7 @@
                                 <a class="navigation__link" href="#">Отзывы</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Цены</a>
+                                <a class="navigation__link" href="price.html">Цены</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="#">Контакты</a>
@@ -79,7 +79,7 @@
             </div>
         </header>
         <main class="page__main">
-            <section class="top-section">
+            <section class="top-section background-section">
                 <div class="container-xl">
                     <picture class="top-section__photo">
                         <source media="(max-width: 767px)"
@@ -88,62 +88,65 @@
                             alt="Семья">
                     </picture>
                     <h1 class="visually-hidden">Perfect Grammar - школа иностранных языков</h1>
-                    <div class="top-section__top row d-flex justify-content-center d-md-block px-3">
-                        <div class="pluses-block col-12 col-md-7 p-0">
-                            <h2 class="pluses-block__title pluses-block__title--main top-section__title h2">Учись
+                    <div class="top-section__left row d-flex justify-content-center d-md-block px-0 px-md-3">
+                        <div class="col-12 col-md-7 p-0">
+                            <h2 class="top-section__title h2">Учись
                                 говорить<br>
                                 на английском языке<br>
                                 по авторским методикам</h2>
-                            <p class="pluses-block__text top-section__text">
+                            <p class="top-section__text">
                                 Мы делаем акцент на глубокое изучение грамматики, сочетая ее с другими аспектами. У нас
                                 уникальные авторские методики и высокопрофессиональные педагоги.
                             </p>
-                            <a class="pluses-block__button button" href="#">Подобрать курс</a>
+                            <a class="button" href="#">Подобрать курс</a>
                         </div>
                     </div>
-                    <div class="top-section__bottom row">
-                        <div
-                            class="top-section__advantages col-12 col-lg-7 col-xl-6 d-flex flex-column flex-wrap align-items-center order-lg-0 order-2">
-                            <div class="advantage-block me-0 me-sm-3">
-                                <img class="advantage-block__icon" src="img/SVG/teacher.svg" alt="Опытные наставники">
-                                <h4 class="advantage-block__title">Опытные наставники</h4>
-                                <p class="advantage-block__text">Дипломированные преподаватели с большим багажом
+                </div>
+            </section>
+            <section class="advantages background-section background-section--bottom-wave">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="advantages__wrapper col-12 col-lg-7 col-xl-6 d-flex flex-column flex-wrap align-items-center order-lg-0 order-2">
+                            <div class="advantages__item me-0 me-sm-3">
+                                <img class="advantages__icon" src="img/SVG/teacher.svg" alt="Опытные наставники">
+                                <h4 class="advantages__subtitle">Опытные наставники</h4>
+                                <p class="advantages__text">Дипломированные преподаватели с большим багажом
                                     знаний
                                     и опытом работы не менее 3 лет</p>
                             </div>
-                            <div class="advantage-block order-sm-3 mt-sm-auto me-0 me-sm-3">
-                                <img class="advantage-block__icon" src="img/SVG/intermediary.svg"
+                            <div class="advantages__item order-sm-3 mt-sm-auto me-0 me-sm-3">
+                                <img class="advantages__icon" src="img/SVG/intermediary.svg"
                                     alt="Эффективная методика">
-                                <h4 class="advantage-block__title">Эффективная методика</h4>
-                                <p class="advantage-block__text">Обучение направлено на живое общение. 80% времени
+                                <h4 class="advantages__subtitle">Эффективная методика</h4>
+                                <p class="advantages__text">Обучение направлено на живое общение. 80% времени
                                     уделяем разговорной практике.</p>
                             </div>
-                            <div class="advantage-block order-sm-2 me-0 me-sm-3">
-                                <img class="advantage-block__icon" src="img/SVG/graduation.svg"
+                            <div class="advantages__item order-sm-2 me-0 me-sm-3">
+                                <img class="advantages__icon" src="img/SVG/graduation.svg"
                                     alt="Интересное обучение">
-                                <h4 class="advantage-block__title">Интересное обучение</h4>
-                                <p class="advantage-block__text">Смотрим любимые видео, слушаем и переводим песни,
+                                <h4 class="advantages__subtitle">Интересное обучение</h4>
+                                <p class="advantages__text">Смотрим любимые видео, слушаем и переводим песни,
                                     разбираем статьи на английском</p>
                             </div>
-                            <div class="advantage-block order-sm-4 me-0 me-sm-3">
-                                <img class="advantage-block__icon" src="img/SVG/third-party.svg" alt="Небольшие группы">
-                                <h4 class="advantage-block__title">Небольшие группы</h4>
-                                <p class="advantage-block__text">Небольшие группы позволяют преподавателю уделять
+                            <div class="advantages__item order-sm-4 me-0 me-sm-3">
+                                <img class="advantages__icon" src="img/SVG/third-party.svg" alt="Небольшие группы">
+                                <h4 class="advantages__subtitle">Небольшие группы</h4>
+                                <p class="advantages__text">Небольшие группы позволяют преподавателю уделять
                                     максимум внимания каждому. </p>
                             </div>
                             <a class="button d-inline-block d-sm-none" href="#">Выбрать программу</a>
                         </div>
                         <div class="col-12 col-lg-5 col-xl-6 d-flex justify-content-center align-items-center">
-                            <div class="top-section__inner pluses-block">
-                                <h3 class="pluses-block__title pluses-block__title h3">Почему нас выбирают?</h3>
-                                <p class="pluses-block__text">Программу курса приспоспосабливаем к языковым
+                            <div class="advantages__inner">
+                                <h3 class="advantages__title h3">Почему нас выбирают?</h3>
+                                <p class="advantages__bottom-text">Программу курса приспоспосабливаем к языковым
                                     целям и
                                     потребностям наших студентов.Индивидуально подходим к каждому. Находим
                                     проблемы и
                                     устраняем их. Наши учителя — профессионалы, которые умеют найти подход к
                                     каждому
                                     ученику.</p>
-                                <a class="pluses-block__button button d-none d-sm-inline-block mb-4" href="#">Выбрать
+                                <a class="advantages__button button d-none d-sm-inline-block mb-4" href="#">Выбрать
                                     программу</a>
                             </div>
                         </div>
@@ -156,7 +159,7 @@
                         <h3 class="section__title h3">Мы придерживаемся лучшей методике обучения</h3>
                     </div>
                     <div class="section__photo-wrap">
-                        <picture class="section__photo best-practices__photo">
+                        <picture class="section__photo section__photo--2nd-background">
                             <img class="section__img" src="img/img/best-practices@1x.png"
                                 srcset="img/img/best-practices@2x.png 2x" width="582" height="568"
                                 alt="Лучшие практики">
@@ -236,7 +239,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section video-training">
+            <section class="section video-training background-section background-section--top-wave">
                 <div class="section__container container-xl">
                     <div class="section__inner">
                         <h3 class="section__title section__title--mini section__title--main-color h3">
@@ -261,7 +264,7 @@
                     </div>
                 </div>
             </section>
-            <section class="programs">
+            <section class="programs background-section">
                 <div class="programs__container container-xl">
                     <h3 class="programs__title h3">Выберите прямо сейчас подходящую для вас программу</h3>
                     <div class="programs__wrap">
@@ -380,23 +383,56 @@
                                     <span class="visually-hidden">Открыть программу</span>
                                 </a>
                                 <h4 class="program-card__title">
-                                    <span class="program-card__title-selection">Easy Hometask</span><br>
-                                    Дом. Задание - В Два Счета
+                                    <span class="program-card__title-selection">Speed Up</span><br>
+                                    Набираем Темп
                                 </h4>
-                                <div class="program-card__price">от 890₽</div>
+                                <div class="program-card__price">от 790₽</div>
                                 <div class="program-card__desc">
-                                    <p>Школьники 1-4 класс</p>
-                                    <p>Группа: 3-6 чел</p>
+                                    <p>Школьники 6-8 класс</p>
+                                    <p>Группа: 2-6 чел.</p>
                                 </div>
                                 <ul class="program-card__list">
-                                    <li class="program-card__item">
-                                        Помощь в выполнении домашней работы;
-                                    </li>
                                     <li class="program-card__item">
                                         Школьная программа;
                                     </li>
                                     <li class="program-card__item">
-                                        Углубленная программа по авторским методикам.
+                                        Углубленная грамматика и лексика;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Структурирование и отработка пройденного материала;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Закрепление пройденных навыков.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="programs__slider-item">
+                            <div class="programs__program-card program-card">
+                                <a class="program-card__link" href="#">
+                                    <span class="visually-hidden">Открыть программу</span>
+                                </a>
+                                <h4 class="program-card__title">
+                                    <span class="program-card__title-selection">Let´S Chat</span><br>
+                                    Разговорные Навыки
+                                </h4>
+                                <div class="program-card__price">от 890₽</div>
+                                <div class="program-card__desc">
+                                    <p>Дошкольники и школьники</p>
+                                    <p>Группа: 2-8 чел.</p>
+                                </div>
+                                <ul class="program-card__list">
+                                    <li class="program-card__item">
+                                        Разговорный английский;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Расширение вокабуляра;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Круглые столы;
+                                    </li>
+                                    <li class="program-card__item">
+                                        Ролевые игры.
                                     </li>
                                 </ul>
                             </div>
@@ -404,14 +440,14 @@
                     </div>
                 </div>
             </section>
-            <section class="section spanish-courses">
+            <section class="section background-section background-section--bottom-wave">
                 <div class="section__container container-xl">
                     <div class="section__inner section__inner--max">
                         <h3 class="section__title section__title--main-color h3">Теперь доступны курсы испанского языка!
                         </h3>
                     </div>
                     <div class="section__photo-wrap">
-                        <picture class="section__photo spanish-courses__photo">
+                        <picture class="section__photo section__photo--2nd-background">
                             <img class="section__img" src="img/img/spanish-courses@1x.png"
                                 srcset="img/img/spanish-courses@2x.png 2x" width="582" height="568"
                                 alt="Лучшие практики">
@@ -460,7 +496,7 @@
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
-                                    <p class="section__text section__text--bold">
+                                    <p class="section__text section__text--bold section__text--main-color">
                                         Купи 4 занятия и получи 1 бесплатно
                                     </p>
                                     <p class="section__text">
@@ -504,7 +540,7 @@
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
-                                    <p class="section__text section__text--bold">
+                                    <p class="section__text section__text--bold section__text--main-color">
                                         Купи 4 занятия и получи 1 бесплатно
                                     </p>
                                     <p class="section__text">
@@ -548,7 +584,7 @@
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
-                                    <p class="section__text section__text--bold">
+                                    <p class="section__text section__text--bold section__text--main-color">
                                         Купи 4 занятия и получи 1 бесплатно
                                     </p>
                                     <p class="section__text">
@@ -592,7 +628,7 @@
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
-                                    <p class="section__text section__text--bold">
+                                    <p class="section__text section__text--bold section__text--main-color">
                                         Купи 4 занятия и получи 1 бесплатно
                                     </p>
                                     <p class="section__text">
@@ -636,7 +672,7 @@
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
-                                    <p class="section__text section__text--bold">
+                                    <p class="section__text section__text--bold section__text--main-color">
                                         Купи 4 занятия и получи 1 бесплатно
                                     </p>
                                     <p class="section__text">
@@ -670,29 +706,102 @@
                 <div class="container-xl">
                     <div class="promo__bottom-slider">
                         <div class="promo__bottom-slider-item">
-                            <button class="promo__link promo__link--graduate" data-slide="0">
+                            <a class="promo__link promo__link--graduate" data-slide="0">
                                 ЕГЭ вместе с нами проще
-                            </button>
+                            </a>
                         </div>
                         <div class="promo__bottom-slider-item">
-                            <button class="promo__link promo__link--news" data-slide="1">
+                            <a class="promo__link promo__link--news" data-slide="1">
                                 Последние новости
-                            </button>
+                            </a>
                         </div>
                         <div class="promo__bottom-slider-item">
-                            <button class="promo__link promo__link--kid" data-slide="2">
+                            <a class="promo__link promo__link--kid" data-slide="2">
 
-                            </button>
+                            </a>
                         </div>
                         <div class="promo__bottom-slider-item">
-                            <button class="promo__link promo__link--prices" data-slide="3">
+                            <a class="promo__link promo__link--prices" data-slide="3">
 
-                            </button>
+                            </a>
                         </div>
                         <div class="promo__bottom-slider-item">
-                            <button class="promo__link promo__link--slogan" data-slide="4">
+                            <a class="promo__link promo__link--slogan" data-slide="4">
 
-                            </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container-xl">
+                    <h3 class="reviews__title h3">Отзывы наших студентов</h3>
+                    <div class="reviews__top-slider">
+                        <div class="reviews__top-slider-item">
+                            <picture class="reviews__picture">
+                                <img class="reviews__photo" width="262" height="306" src="img/img/reviews-1st@1x.jpg"
+                                    srcset="img/img/reviews-1st@2x.jpg 2x" alt="Обозреватель">
+                            </picture>
+                        </div>
+                        <div class="reviews__top-slider-item">
+                            <picture class="reviews__picture">
+                                <img class="reviews__photo" width="262" height="306" src="img/img/reviews-2nd@1x.jpg"
+                                    srcset="img/img/reviews-2nd@2x.jpg 2x" alt="Обозреватель">
+                            </picture>
+                        </div>
+                        <div class="reviews__top-slider-item">
+                            <picture class="reviews__picture">
+                                <img class="reviews__photo" width="262" height="306" src="img/img/reviews-3rd@1x.jpg"
+                                    srcset="img/img/reviews-3rd@2x.jpg 2x" alt="Обозреватель">
+                            </picture>
+                        </div>
+                        <div class="reviews__top-slider-item">
+                            <picture class="reviews__picture">
+                                <img class="reviews__photo" width="262" height="306" src="img/img/reviews-2nd@1x.jpg"
+                                    srcset="img/img/reviews-2nd@2x.jpg 2x" alt="Обозреватель">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="reviews__bottom-slider">
+                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                            <p class="reviews__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же начало
+                                повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                проверки форм развития. Значимость этих проблем настолько очевидна.
+                            </p>
+                            <p class="reviews__reviewer-name">Наталья Иванова</p>
+                            <p class="reviews__reviewer-profession">Программист</p>
+                        </div>
+                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                            <p class="reviews__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же начало
+                                повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                проверки форм развития. Значимость этих проблем настолько очевидна.
+                            </p>
+                            <p class="reviews__reviewer-name">Наталья Иванова</p>
+                            <p class="reviews__reviewer-profession">Программист</p>
+                        </div>
+                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                            <p class="reviews__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же начало
+                                повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                проверки форм развития. Значимость этих проблем настолько очевидна.
+                            </p>
+                            <p class="reviews__reviewer-name">Наталья Иванова</p>
+                            <p class="reviews__reviewer-profession">Программист</p>
+                        </div>
+                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                            <p class="reviews__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же начало
+                                повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                проверки форм развития. Значимость этих проблем настолько очевидна.
+                            </p>
+                            <p class="reviews__reviewer-name">Наталья Иванова</p>
+                            <p class="reviews__reviewer-profession">Программист</p>
                         </div>
                     </div>
                 </div>

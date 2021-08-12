@@ -41,7 +41,7 @@
                                 <a class="navigation__link" href="#">Отзывы</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Цены</a>
+                                <a class="navigation__link" href="price.html">Цены</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="#">Контакты</a>
@@ -81,11 +81,22 @@
         <main class="page__main">
             <section class="section perfect-grammar background-section">
                 <div class="section__container container-xl">
+                    
                     <div class="section__inner section__inner--max">
+                        <div class="page__navigation mb-4 d-none d-md-block">
+                            <a class="page__navigation-link p-2" href="index.html">Главная</a>
+                            /
+                            <a class="page__navigation-link page__navigation-link--active p-2">О нас</a>
+                        </div>
                         <h2 class="section__title h2">Perfect Grammar</h2>
                     </div>
-                    <div class="section__photo-wrap">
-                        <picture class="section__photo">
+                    <div class="section__photo-wrap section__photo-wrap--top">
+                        <div class="page__navigation mb-4 d-block d-md-none align-self-start">
+                            <a class="page__navigation-link p-2" href="index.html">Главная</a>
+                            /
+                            <a class="page__navigation-link page__navigation-link--active p-2">О нас</a>
+                        </div>
+                        <picture class="section__photo section__photo--2nd-background">
                             <img class="section__img" src="img/img/perfect-grammar@1x.png"
                                 srcset="img/img/perfect-grammar@2x.png 2x" width="582" height="568"
                                 alt="Лучшие практики">
@@ -144,7 +155,7 @@
                         <h3 class="section__title section__title--main-color h3">Мы Учим Любить Английский Язык</h3>
                     </div>
                     <div class="section__photo-wrap">
-                        <picture class="section__photo">
+                        <picture class="section__photo section__photo--2nd-background">
                             <img class="section__img" src="img/img/english@1x.png" srcset="img/img/english@2x.png 2x"
                                 width="582" height="568" alt="Лучшие практики">
                         </picture>
@@ -257,7 +268,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section offline-training">
+            <section class="section offline-training pb-4">
                 <div class="section__container container-xl">
                     <div class="section__inner">
                         <h3 class="section__title section__title--mini section__title--main-color h3">Или офлайн</h3>

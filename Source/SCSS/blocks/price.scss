@@ -1,0 +1,122 @@
+.price {
+    padding-top: 140px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    @media (max-width: $display-md-max) {
+        padding-top: 100px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        @include text-medium;
+
+        margin-bottom: 30px;
+        font-size: 35px;
+
+        @media (max-width: $display-md-max) {
+            font-size: 25px;
+        }
+    }
+
+    &__table {
+        width: 100%;
+        min-width: 960px;
+        padding-bottom: 40px;
+        margin-bottom: 35px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 25px rgba(44, 43, 43, 0.2);
+
+        @media (max-width: $display-md-max) {
+            min-width: 680px;
+        }
+
+        & th {
+            @include text-medium;
+            @include main-gradient;
+
+            height: 58px;
+            padding: 0 10px;
+            font-size: 15px;
+
+            @media (max-width: $display-md-max) {
+                height: 34px;
+                padding: 0 8px;
+                font-size: 10px;
+            }
+
+            &:first-child {
+                padding-left: 40px;
+                border-top-left-radius: 10px;
+
+                @media (max-width: $display-md-max) {
+                    padding-left: 25px;
+                }
+            }
+
+            &:last-child {
+                padding-right: 40px;
+                border-top-right-radius: 10px;
+
+                @media (max-width: $display-md-max) {
+                    padding-right: 25px;
+                }
+            }
+        }
+
+        & td {
+            padding: 10px;
+            font-size: 14px;
+
+            @media (max-width: $display-md-max) {
+                font-size: 9px;
+            }
+
+            &:first-child {
+                padding-left: 40px;
+
+                @media (max-width: $display-md-max) {
+                    padding-left: 25px;
+                }
+            }
+
+            &:last-child {
+                padding-right: 40px;
+
+                @media (max-width: $display-md-max) {
+                    padding-right: 25px;
+                }
+            }
+        }
+
+        & tr {
+            &:last-child {
+                & td {
+                    padding-bottom: 40px;
+
+                    @media (max-width: $display-md-max) {
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__table-td-color {
+        @include text-title;
+
+        color: $main-color;
+    }
+
+    &__table-text-center {
+        text-align: center;
+    }
+}

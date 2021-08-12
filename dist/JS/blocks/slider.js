@@ -31,42 +31,72 @@ $('.programs__slider').slick({
 
 //promo sliders
 
-$(function () {
+$('.promo__top-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    touchThreshold: 10,
+    infinite: false,
+    asNavFor: '.promo__bottom-slider',
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+            arrows: false,
+        }
+    }, ]
+});
 
-    //Вешаем обработчики
-    var addListeners = function (slider) {
-        var $links = $('.promo__link');
+$('.promo__bottom-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    touchThreshold: 10,
+    infinite: false,
+    arrows: false,
+    variableWidth: true,
+    asNavFor: '.promo__top-slider',
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 4,
+        }
+    }, ]
+});
 
-        $links.on('click', function (evt) {
-            evt.preventDefault()
+// reviews sliders
 
-            var slide = $(this).attr('data-slide');
-
-            slider.slick('slickGoTo', slide);
-        })
-    };
-
-    //Инициализируем слайдер
-    var init = function () {
-        var $slickContainer = $('.promo__top-slider');
-
-        //Обработчик события init 
-        $slickContainer.on('init', function (event, slick, currentSlide, nextSlide) {
-            var $slider = $(this);
-
-            addListeners($slider);
-        });
-
-        //Инициализация слайдера
-        $('.promo__top-slider').slick({
+$('.reviews__top-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    touchThreshold: 10,
+    infinite: true,
+    centerMode: true,
+    centerPadding: "0px",
+    asNavFor: '.reviews__bottom-slider',
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+            arrows: false,
+        },
+        breakpoint: 576,
+        settings: {
+            accessibility: false,
+            arrows: true,
+            centerPadding: "20px",
             slidesToShow: 1,
-            slidesToScroll: 1,
-            touchThreshold: 10,
-            Infinity: false,
-            /* autoplay: true,
-            autoplaySpeed: 2000, */
-        });
-    };
+        },
+    }, ]
+});
 
-    init();
+$('.reviews__bottom-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    touchThreshold: 10,
+    infinite: true,
+    asNavFor: '.reviews__top-slider',
+    arrows: false,
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+            arrows: true,
+        },
+    }, ]
 });
