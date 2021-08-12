@@ -92,7 +92,7 @@ const watcher = () => {
 const createWebp = () => {
   return gulp.src("Source/img/img/*.{jpg,png}")
     .pipe(webp({
-      quality: 80
+      quality: 90
     }))
     .pipe(gulp.dest('Source/img/img/'));
 }

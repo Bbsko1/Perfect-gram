@@ -1,0 +1,40 @@
+.contacts {
+    padding-top: 140px;
+
+    @media (max-width: $display-md-max) {
+        padding-top: 100px;
+    }
+
+    &__name {
+        @include text-medium;
+        @include main-gradient;
+
+        position: relative;
+        padding-left: 35px;
+        margin: 35px 0 15px;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media (max-width: $display-md-max) {
+            margin: 20px 0 15px;
+        }
+
+        &::before {
+            @include main-gradient;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            content: "";
+            border-radius: 100%;
+        }
+    }
+
+    &__wrapper {
+        @include text-medium;
+
+        padding-left: 35px;
+    }
+}
