@@ -1,0 +1,26 @@
+.director {
+    padding-top: 80px;
+
+    &__photo {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            right: 0;
+            bottom: 25%;
+            width: 72px;
+            height: 64px;
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg width='72' height='64' viewBox='0 0 72 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M71.8109 64H43.2109V39C43.2109 28.8667 45.5443 20.3333 50.2109 13.4C55.0109 6.46666 62.2109 2.19999 71.8109 0.599998V13.8C63.2776 16.3333 58.8109 22.8667 58.4109 33.4H71.8109V64ZM29.4109 64H0.810938V39C0.810938 28.8667 3.14427 20.3333 7.81094 13.4C12.6109 6.46666 19.8109 2.19999 29.4109 0.599998V13.8C20.8776 16.3333 16.4109 22.8667 16.0109 33.4H29.4109V64Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='36.5' y1='11' x2='36.5' y2='171' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFE175'/%3E%3Cstop offset='1' stop-color='%23FFC01B'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @media (max-width: $display-sm-max) {
+                right: 80%;
+                bottom: 0%;
+                width: 54px;
+                height: 48px;
+            }
+        }
+    }
+}

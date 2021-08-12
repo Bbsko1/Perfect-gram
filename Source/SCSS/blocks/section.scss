@@ -101,6 +101,11 @@
     &__text {
         margin-bottom: 30px;
 
+        @media (max-width: $display-md-max) {
+            max-width: 100%;
+            font-size: 14px;
+        }
+
         &--mini {
             max-width: 470px;
             margin: 0 auto 30px;
@@ -110,10 +115,26 @@
             text-transform: uppercase;
         }
 
-        @media (max-width: $display-md-max) {
-            max-width: 100%;
-            font-size: 14px;
+        &--main-color {
+            color: $main-color;
         }
+
+        &--bold {
+            @include text-medium;
+
+            font-size: 20px;
+
+            @media (max-width: $display-md-max) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__link {
+        @include text-medium;
+
+        color: $main-color;
+        text-transform: uppercase;
     }
 
     &__box {

@@ -10,6 +10,11 @@
     box-shadow: 4px 4px 25px rgba(44, 43, 43, 0.2);
     transition: 0.3s;
 
+    &--max {
+        width: 100%;
+        max-width: 100%;
+    }
+
     @media (max-width: $display-sm-max) {
         padding: 25px 16px;
     }
@@ -41,6 +46,15 @@
         color: $main-color;
         text-align: center;
 
+        &--max {
+            font-size: 35px;
+            text-align: left;
+
+            @media (max-width: $display-sm-max) {
+                text-align: center;
+            }
+        }
+
         @media (max-width: $display-lg-max) {
             margin: 15px 0;
             font-size: 32px;
@@ -53,6 +67,14 @@
         font-size: 17px;
         line-height: 1.4;
         text-align: center;
+
+        &--max {
+            text-align: left;
+
+            @media (max-width: $display-sm-max) {
+                text-align: center;
+            }
+        }
 
         @media (max-width: $display-lg-max) {
             font-size: 12px;
@@ -89,7 +111,7 @@
         }
     }
 
-    /* &__link {
+    &__link {
         position: absolute;
         top: 0;
         right: 0;
@@ -98,5 +120,5 @@
         z-index: 2;
         background-color: transparent;
         transition: 0.3s;
-    } */
+    }
 }

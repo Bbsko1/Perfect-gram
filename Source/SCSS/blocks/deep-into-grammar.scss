@@ -1,0 +1,14 @@
+.deep-into-grammar {
+    padding-top: 140px;
+
+    &__inner {
+        max-width: 572px;
+    }
+
+    &__title-selection {
+        @include main-gradient;
+
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
