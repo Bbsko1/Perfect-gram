@@ -72,18 +72,21 @@ $('.reviews__top-slider').slick({
     centerPadding: "0px",
     asNavFor: '.reviews__bottom-slider',
     responsive: [{
-        breakpoint: 992,
-        settings: {
-            arrows: false,
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+            }
         },
-        breakpoint: 576,
-        settings: {
-            accessibility: false,
-            arrows: true,
-            centerPadding: "20px",
-            slidesToShow: 1,
+        {
+            breakpoint: 576,
+            settings: {
+                accessibility: false,
+                arrows: true,
+                centerPadding: "20px",
+                slidesToShow: 1,
+            }
         },
-    }, ]
+    ]
 });
 
 $('.reviews__bottom-slider').slick({
@@ -99,4 +102,37 @@ $('.reviews__bottom-slider').slick({
             arrows: true,
         },
     }, ]
+});
+
+// instagram slider
+
+$('.instagram__slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    touchThreshold: 10,
+    infinite: true,
+    arrows: true,
+    appendArrows: $(".instagram__slick-arrows"),
+    responsive: [{
+            breakpoint: 1280,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });

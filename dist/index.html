@@ -32,19 +32,19 @@
                                 <a class="navigation__link" href="courses.html">Курсы</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Наш справочник</a>
+                                <a class="navigation__link" href="unique-guide.html">Наш справочник</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="#">Спецпредложения</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Отзывы</a>
+                                <a class="navigation__link" href="reviews.html">Отзывы</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="price.html">Цены</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Контакты</a>
+                                <a class="navigation__link" href="contacts.html">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -82,6 +82,9 @@
             <section class="top-section background-section">
                 <div class="container-xl">
                     <picture class="top-section__photo">
+                        <source media="(max-width: 767px)" type="image/webp"
+                            srcset="img/img/top-section-photo-mobile@1x.webp 1x, img/img/top-section-photo-mobile@2x.webp 2x">
+                        <source type="image/webp" srcset="img/img/top@1x.webp 1x, img/img/top@2x.webp 2x">
                         <source media="(max-width: 767px)"
                             srcset="img/img/top-section-photo-mobile@1x.png 1x, img/img/top-section-photo-mobile@2x.png 2x">
                         <img class="top-section__img" src="img/img/top@1x.png" srcset="img/img/top@2x.png 2x"
@@ -89,7 +92,7 @@
                     </picture>
                     <h1 class="visually-hidden">Perfect Grammar - школа иностранных языков</h1>
                     <div class="top-section__left row d-flex justify-content-center d-md-block px-0 px-md-3">
-                        <div class="col-12 col-md-7 p-0">
+                        <div class="col-12 col-md-7 p-0 pb-3">
                             <h2 class="top-section__title h2">Учись
                                 говорить<br>
                                 на английском языке<br>
@@ -106,34 +109,33 @@
             <section class="advantages background-section background-section--bottom-wave">
                 <div class="container-xl">
                     <div class="row">
-                        <div class="advantages__wrapper col-12 col-lg-7 col-xl-6 d-flex flex-column flex-wrap align-items-center order-lg-0 order-2">
-                            <div class="advantages__item me-0 me-sm-3">
-                                <img class="advantages__icon" src="img/SVG/teacher.svg" alt="Опытные наставники">
+                        <div
+                            class="advantages__wrapper col-12 col-lg-7 col-xl-6 d-flex flex-column flex-wrap align-items-center order-lg-0 order-2">
+                            <a class="advantages__item me-0 me-sm-3" href="#">
+                                <div class="advantages__icon advantages__icon--teacher"></div>
                                 <h4 class="advantages__subtitle">Опытные наставники</h4>
                                 <p class="advantages__text">Дипломированные преподаватели с большим багажом
                                     знаний
                                     и опытом работы не менее 3 лет</p>
-                            </div>
-                            <div class="advantages__item order-sm-3 mt-sm-auto me-0 me-sm-3">
-                                <img class="advantages__icon" src="img/SVG/intermediary.svg"
-                                    alt="Эффективная методика">
+                            </a>
+                            <a class="advantages__item order-sm-3 mt-sm-auto me-0 me-sm-3" href="#">
+                                <div class="advantages__icon advantages__icon--intermediary"></div>
                                 <h4 class="advantages__subtitle">Эффективная методика</h4>
                                 <p class="advantages__text">Обучение направлено на живое общение. 80% времени
                                     уделяем разговорной практике.</p>
-                            </div>
-                            <div class="advantages__item order-sm-2 me-0 me-sm-3">
-                                <img class="advantages__icon" src="img/SVG/graduation.svg"
-                                    alt="Интересное обучение">
+                            </a>
+                            <a class="advantages__item order-sm-2 me-0 me-sm-3" href="#">
+                                <div class="advantages__icon advantages__icon--graduation"></div>
                                 <h4 class="advantages__subtitle">Интересное обучение</h4>
                                 <p class="advantages__text">Смотрим любимые видео, слушаем и переводим песни,
                                     разбираем статьи на английском</p>
-                            </div>
-                            <div class="advantages__item order-sm-4 me-0 me-sm-3">
-                                <img class="advantages__icon" src="img/SVG/third-party.svg" alt="Небольшие группы">
+                            </a>
+                            <a class="advantages__item order-sm-4 me-0 me-sm-3" href="#">
+                                <div class="advantages__icon advantages__icon--third-party"></div>
                                 <h4 class="advantages__subtitle">Небольшие группы</h4>
                                 <p class="advantages__text">Небольшие группы позволяют преподавателю уделять
                                     максимум внимания каждому. </p>
-                            </div>
+                            </a>
                             <a class="button d-inline-block d-sm-none" href="#">Выбрать программу</a>
                         </div>
                         <div class="col-12 col-lg-5 col-xl-6 d-flex justify-content-center align-items-center">
@@ -153,13 +155,15 @@
                     </div>
                 </div>
             </section>
-            <section class="section best-practices">
+            <section class="section">
                 <div class="section__container container-xl">
                     <div class="section__inner section__inner--max">
                         <h3 class="section__title h3">Мы придерживаемся лучшей методике обучения</h3>
                     </div>
                     <div class="section__photo-wrap">
                         <picture class="section__photo section__photo--2nd-background">
+                            <source type="image/webp"
+                                srcset="img/img/best-practices@1x.webp 1x, img/img/best-practices@2x.webp 2x">
                             <img class="section__img" src="img/img/best-practices@1x.png"
                                 srcset="img/img/best-practices@2x.png 2x" width="582" height="568"
                                 alt="Лучшие практики">
@@ -191,7 +195,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section online-training">
+            <section class="section py-4">
                 <div class="section__container container-xl">
                     <div class="section__inner">
                         <h3 class="section__title section__title--mini section__title--main-color h3">
@@ -200,9 +204,11 @@
                     </div>
                     <div class="section__photo-wrap section__photo-wrap--left">
                         <picture class="section__photo">
+                            <source type="image/webp"
+                                srcset="img/img/online-training-section@1x.webp 1x, img/img/online-training-section@2x.webp 2x">
                             <img class="section__img" src="img/img/online-training-section@1x.png"
                                 srcset="img/img/online-training-section@2x.png 2x" width="582" height="568"
-                                alt="Лучшие практики">
+                                alt="Онлайн уроки">
                         </picture>
                     </div>
                     <div class="section__wrapper">
@@ -212,22 +218,28 @@
                             вас время. Вам необходим только компьютер и интернет.
                         </p>
                         <div class="section__box section__box--mini">
-                            <a class="section__icon-link section__icon-link--skype" href="#"></a>
-                            <a class="section__icon-link section__icon-link--zoom" href="#"></a>
+                            <a class="section__icon-link section__icon-link--skype" href="#">
+                                <span class="visually-hidden">Skype</span>
+                            </a>
+                            <a class="section__icon-link section__icon-link--zoom" href="#">
+                                <span class="visually-hidden">Zoom</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section offline-training">
+            <section class="section mt-5">
                 <div class="section__container container-xl">
                     <div class="section__inner">
                         <h3 class="section__title section__title--mini section__title--main-color h3">Или офлайн</h3>
                     </div>
                     <div class="section__photo-wrap">
                         <picture class="section__photo section__photo">
+                            <source type="image/webp"
+                                srcset="img/img/offline-training@1x.webp 1x, img/img/offline-training@2x.webp 2x">
                             <img class="section__img" src="img/img/offline-training@1x.png"
                                 srcset="img/img/offline-training@2x.png 2x" width="582" height="568"
-                                alt="Лучшие практики">
+                                alt="Офлайн уроки">
                         </picture>
                     </div>
                     <div class="section__wrapper">
@@ -239,7 +251,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section video-training background-section background-section--top-wave">
+            <section class="section pb-5 background-section background-section--top-wave">
                 <div class="section__container container-xl">
                     <div class="section__inner">
                         <h3 class="section__title section__title--mini section__title--main-color h3">
@@ -248,9 +260,11 @@
                     </div>
                     <div class="section__photo-wrap section__photo-wrap--left">
                         <picture class="section__photo">
+                            <source type="image/webp"
+                                srcset="img/img/video-training@1x.webp 1x, img/img/video-training@2x.webp 2x">
                             <img class="section__img" src="img/img/video-training@1x.png"
                                 srcset="img/img/video-training@2x.png 2x" width="582" height="568"
-                                alt="Лучшие практики">
+                                alt="Видео уроки">
                         </picture>
                     </div>
                     <div class="section__wrapper">
@@ -264,7 +278,7 @@
                     </div>
                 </div>
             </section>
-            <section class="programs background-section">
+            <section class="programs pt-4 background-section">
                 <div class="programs__container container-xl">
                     <h3 class="programs__title h3">Выберите прямо сейчас подходящую для вас программу</h3>
                     <div class="programs__wrap">
@@ -440,7 +454,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section background-section background-section--bottom-wave">
+            <section class="section background-section background-section--bottom-wave-2">
                 <div class="section__container container-xl">
                     <div class="section__inner section__inner--max">
                         <h3 class="section__title section__title--main-color h3">Теперь доступны курсы испанского языка!
@@ -448,9 +462,11 @@
                     </div>
                     <div class="section__photo-wrap">
                         <picture class="section__photo section__photo--2nd-background">
+                            <source type="image/webp"
+                                srcset="img/img/spanish-courses@1x.webp 1x, img/img/spanish-courses@2x.webp 2x">
                             <img class="section__img" src="img/img/spanish-courses@1x.png"
                                 srcset="img/img/spanish-courses@2x.png 2x" width="582" height="568"
-                                alt="Лучшие практики">
+                                alt="Испанский язык">
                         </picture>
                     </div>
                     <div class="section__wrapper section__wrapper--max">
@@ -490,9 +506,11 @@
                                 </div>
                                 <div class="section__photo-wrap section__photo-wrap--left">
                                     <picture class="section__photo promo__photo">
+                                        <source type="image/webp"
+                                            srcset="img/img/promo@1x.webp 1x, img/img/promo@2x.webp 2x">
                                         <img class="section__img" src="img/img/promo@1x.png"
                                             srcset="img/img/promo@2x.png 2x" width="582" height="568"
-                                            alt="Лучшие практики">
+                                            alt="Акция">
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
@@ -534,9 +552,11 @@
                                 </div>
                                 <div class="section__photo-wrap section__photo-wrap--left">
                                     <picture class="section__photo promo__photo">
+                                        <source type="image/webp"
+                                            srcset="img/img/promo@1x.webp 1x, img/img/promo@2x.webp 2x">
                                         <img class="section__img" src="img/img/promo@1x.png"
                                             srcset="img/img/promo@2x.png 2x" width="582" height="568"
-                                            alt="Лучшие практики">
+                                            alt="Акция">
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
@@ -578,9 +598,11 @@
                                 </div>
                                 <div class="section__photo-wrap section__photo-wrap--left">
                                     <picture class="section__photo promo__photo">
+                                        <source type="image/webp"
+                                            srcset="img/img/promo@1x.webp 1x, img/img/promo@2x.webp 2x">
                                         <img class="section__img" src="img/img/promo@1x.png"
                                             srcset="img/img/promo@2x.png 2x" width="582" height="568"
-                                            alt="Лучшие практики">
+                                            alt="Акция">
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
@@ -622,9 +644,11 @@
                                 </div>
                                 <div class="section__photo-wrap section__photo-wrap--left">
                                     <picture class="section__photo promo__photo">
+                                        <source type="image/webp"
+                                            srcset="img/img/promo@1x.webp 1x, img/img/promo@2x.webp 2x">
                                         <img class="section__img" src="img/img/promo@1x.png"
                                             srcset="img/img/promo@2x.png 2x" width="582" height="568"
-                                            alt="Лучшие практики">
+                                            alt="Акция">
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
@@ -666,9 +690,11 @@
                                 </div>
                                 <div class="section__photo-wrap section__photo-wrap--left">
                                     <picture class="section__photo promo__photo">
+                                        <source type="image/webp"
+                                            srcset="img/img/promo@1x.webp 1x, img/img/promo@2x.webp 2x">
                                         <img class="section__img" src="img/img/promo@1x.png"
                                             srcset="img/img/promo@2x.png 2x" width="582" height="568"
-                                            alt="Лучшие практики">
+                                            alt="Акция">
                                     </picture>
                                 </div>
                                 <div class="section__wrapper section__wrapper--max">
@@ -706,29 +732,29 @@
                 <div class="container-xl">
                     <div class="promo__bottom-slider">
                         <div class="promo__bottom-slider-item">
-                            <a class="promo__link promo__link--graduate" data-slide="0">
+                            <div class="promo__img promo__img--graduate" data-slide="0">
                                 ЕГЭ вместе с нами проще
-                            </a>
+                            </div>
                         </div>
                         <div class="promo__bottom-slider-item">
-                            <a class="promo__link promo__link--news" data-slide="1">
+                            <div class="promo__img promo__img--news" data-slide="1">
                                 Последние новости
-                            </a>
+                            </div>
                         </div>
                         <div class="promo__bottom-slider-item">
-                            <a class="promo__link promo__link--kid" data-slide="2">
+                            <div class="promo__img promo__img--kid" data-slide="2">
 
-                            </a>
+                            </div>
                         </div>
                         <div class="promo__bottom-slider-item">
-                            <a class="promo__link promo__link--prices" data-slide="3">
+                            <div class="promo__img promo__img--prices" data-slide="3">
 
-                            </a>
+                            </div>
                         </div>
                         <div class="promo__bottom-slider-item">
-                            <a class="promo__link promo__link--slogan" data-slide="4">
+                            <div class="promo__img promo__img--slogan" data-slide="4">
 
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -739,24 +765,32 @@
                     <div class="reviews__top-slider">
                         <div class="reviews__top-slider-item">
                             <picture class="reviews__picture">
+                                <source type="image/webp"
+                                    srcset="img/img/reviews-1st@1x.webp 1x, img/img/reviews-1st@2x.webp 2x">
                                 <img class="reviews__photo" width="262" height="306" src="img/img/reviews-1st@1x.jpg"
                                     srcset="img/img/reviews-1st@2x.jpg 2x" alt="Обозреватель">
                             </picture>
                         </div>
                         <div class="reviews__top-slider-item">
                             <picture class="reviews__picture">
+                                <source type="image/webp"
+                                    srcset="img/img/reviews-2nd@1x.webp 1x, img/img/reviews-2nd@2x.webp 2x">
                                 <img class="reviews__photo" width="262" height="306" src="img/img/reviews-2nd@1x.jpg"
                                     srcset="img/img/reviews-2nd@2x.jpg 2x" alt="Обозреватель">
                             </picture>
                         </div>
                         <div class="reviews__top-slider-item">
                             <picture class="reviews__picture">
+                                <source type="image/webp"
+                                    srcset="img/img/reviews-3rd@1x.webp 1x, img/img/reviews-3rd@2x.webp 2x">
                                 <img class="reviews__photo" width="262" height="306" src="img/img/reviews-3rd@1x.jpg"
                                     srcset="img/img/reviews-3rd@2x.jpg 2x" alt="Обозреватель">
                             </picture>
                         </div>
                         <div class="reviews__top-slider-item">
                             <picture class="reviews__picture">
+                                <source type="image/webp"
+                                    srcset="img/img/reviews-2nd@1x.webp 1x, img/img/reviews-2nd@2x.webp 2x">
                                 <img class="reviews__photo" width="262" height="306" src="img/img/reviews-2nd@1x.jpg"
                                     srcset="img/img/reviews-2nd@2x.jpg 2x" alt="Обозреватель">
                             </picture>
@@ -765,9 +799,12 @@
                     <div class="reviews__bottom-slider">
                         <div class="reviews__wrapper d-flex flex-column align-items-center">
                             <p class="reviews__text">
-                                Задача организации, в особенности же реализация намеченных плановых заданий способствует
-                                подготовки и реализации новых предложений. Задача организации, в особенности же начало
-                                повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                Задача организации, в особенности же реализация намеченных плановых заданий
+                                способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же
+                                начало
+                                повседневной работы по формированию позиции представляет собой интересный
+                                эксперимент
                                 проверки форм развития. Значимость этих проблем настолько очевидна.
                             </p>
                             <p class="reviews__reviewer-name">Наталья Иванова</p>
@@ -775,9 +812,12 @@
                         </div>
                         <div class="reviews__wrapper d-flex flex-column align-items-center">
                             <p class="reviews__text">
-                                Задача организации, в особенности же реализация намеченных плановых заданий способствует
-                                подготовки и реализации новых предложений. Задача организации, в особенности же начало
-                                повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                Задача организации, в особенности же реализация намеченных плановых заданий
+                                способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же
+                                начало
+                                повседневной работы по формированию позиции представляет собой интересный
+                                эксперимент
                                 проверки форм развития. Значимость этих проблем настолько очевидна.
                             </p>
                             <p class="reviews__reviewer-name">Наталья Иванова</p>
@@ -785,9 +825,12 @@
                         </div>
                         <div class="reviews__wrapper d-flex flex-column align-items-center">
                             <p class="reviews__text">
-                                Задача организации, в особенности же реализация намеченных плановых заданий способствует
-                                подготовки и реализации новых предложений. Задача организации, в особенности же начало
-                                повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                Задача организации, в особенности же реализация намеченных плановых заданий
+                                способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же
+                                начало
+                                повседневной работы по формированию позиции представляет собой интересный
+                                эксперимент
                                 проверки форм развития. Значимость этих проблем настолько очевидна.
                             </p>
                             <p class="reviews__reviewer-name">Наталья Иванова</p>
@@ -795,9 +838,12 @@
                         </div>
                         <div class="reviews__wrapper d-flex flex-column align-items-center">
                             <p class="reviews__text">
-                                Задача организации, в особенности же реализация намеченных плановых заданий способствует
-                                подготовки и реализации новых предложений. Задача организации, в особенности же начало
-                                повседневной работы по формированию позиции представляет собой интересный эксперимент
+                                Задача организации, в особенности же реализация намеченных плановых заданий
+                                способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же
+                                начало
+                                повседневной работы по формированию позиции представляет собой интересный
+                                эксперимент
                                 проверки форм развития. Значимость этих проблем настолько очевидна.
                             </p>
                             <p class="reviews__reviewer-name">Наталья Иванова</p>
@@ -836,7 +882,7 @@
                         <p class="footer__questions-form-text">Мы всегда рады на них ответить</p>
                         <form class="footer__form d-flex flex-column" action="#">
                             <label class="footer__form-label footer__form-label--name">
-                                <input class="footer__input" type="name" name="name" placeholder="Введите ваше имя">
+                                <input class="footer__input" type="text" name="name" placeholder="Введите ваше имя">
                             </label>
                             <label class="footer__form-label footer__form-label--phone">
                                 <input class="footer__input" type="tel" name="phone" placeholder="Введите ваш телефон">
@@ -874,8 +920,6 @@
             </div>
         </footer>
     </div>
-
-
     <script src="js/main.min.js"></script>
 </body>
 

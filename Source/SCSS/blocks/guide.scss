@@ -1,0 +1,84 @@
+.guide {
+    padding: 60px 0;
+
+    @media (max-width: $display-lg-max) {
+        padding: 25px 0;
+    }
+
+    &__button {
+        min-width: 100%;
+        margin-top: 60px;
+        margin-bottom: -100px;
+        transition: 0.3s;
+
+        &:focus {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: $display-lg-max) {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__wrapper {
+        height: 470px;
+
+        @media (max-width: $display-lg-max) {
+            height: auto;
+        }
+    }
+
+    &__figcaption {
+        @include text-medium;
+
+        margin-top: 20px;
+        font-size: 13px;
+        transition: all 0.3s;
+
+        @media (max-width: $display-lg-max) {
+            text-align: center;
+        }
+    }
+
+    &__item {
+        padding: 25px 20px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 4px 4px 25px rgba(44, 43, 43, 0.2);
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            align-items: center;
+
+            & .guide__button {
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+
+            & .guide__figcaption {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: $display-lg-max) {
+            align-items: center;
+        }
+    }
+
+    &__figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__price {
+        @include text-medium;
+
+        font-size: 20px;
+        color: $main-color;
+    }
+}

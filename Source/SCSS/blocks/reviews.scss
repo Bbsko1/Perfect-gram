@@ -163,6 +163,10 @@
     position: relative;
     margin-top: 75px;
 
+    @media (max-width: $display-md-max) {
+        margin-top: 50px;
+    }
+
     & .slick-track {
         display: flex;
         justify-content: space-between;

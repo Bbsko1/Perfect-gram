@@ -52,6 +52,13 @@
 
     &__phone {
         @include text-title;
+
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            color: rgba($color: $main-color, $alpha: 0.6);
+        }
     }
 
     &__social {

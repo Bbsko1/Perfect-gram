@@ -32,7 +32,7 @@
                                 <a class="navigation__link" href="courses.html">Курсы</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Наш справочник</a>
+                                <a class="navigation__link" href="unique-guide.html">Наш справочник</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="#">Спецпредложения</a>
@@ -79,7 +79,7 @@
             </div>
         </header>
         <main class="page__main">
-            <section class="deep-into-grammar section background-section background-section--bottom-wave">
+            <section class="deep-into-grammar section section--top background-section background-section--bottom-wave">
                 <div class="section__container container-xl">
                     <div class="deep-into-grammar__inner section__inner section__inner--max">
                         <div class="page__navigation mb-4 d-none d-md-block">
@@ -107,6 +107,8 @@
                             <a class="page__navigation-link page__navigation-link--active p-2">Deep Into Grammar</a>
                         </div>
                         <picture class="section__photo section__photo--2nd-background">
+                            <source type="image/webp"
+                                srcset="img/img/deep-into-grammar@1x.webp 1x, img/img/deep-into-grammar@2x.webp 2x">
                             <img class="section__img" src="img/img/deep-into-grammar@1x.png"
                                 srcset="img/img/deep-into-grammar@2x.png 2x" width="582" height="568"
                                 alt="Углубленная Грамматика">
@@ -167,6 +169,8 @@
                     </div>
                     <div class="section__photo-wrap">
                         <picture class="section__photo section__photo--2nd-background">
+                            <source type="image/webp"
+                                srcset="img/img/about-deep-into-grammar@1x.webp 1x, img/img/about-deep-into-grammar@2x.webp 2x">
                             <img class="section__img" src="img/img/about-deep-into-grammar@1x.png"
                                 srcset="img/img/about-deep-into-grammar@2x.png 2x" width="582" height="568"
                                 alt="О программе">
@@ -208,46 +212,45 @@
                         <div class="trial-lesson__inner col-12 col-md-7 col-xl-6">
                             <p class="trial-lesson__slogan">Just do it!</p>
                             <picture>
-                                <source media="(max-width: 767px)"
-                                    srcset="img/img/trial-lesson-mobile@1x.png 1x, img/img/trial-lesson-mobile@2x.png 2x">
-                                <img class="trial-lesson__photo" width="770" height="546"
-                                    src="img/img/trial-lesson@1x.png" srcset="img/img/trial-lesson@2x.png 2x"
-                                    alt="Just do it">
+                                <source media="(max-width: 767px)" type="image/webp" srcset="img/img/trial-lesson-mobile@1x.webp 1x, img/img/trial-lesson-mobile@2x.webp 2x">
+                                <source type="image/webp" srcset="img/img/trial-lesson@1x.webp 1x, img/img/trial-lesson@2x.webp 2x">
+                                <source media="(max-width: 767px)" srcset="img/img/trial-lesson-mobile@1x.png 1x, img/img/trial-lesson-mobile@2x.png 2x">
+                                <img class="trial-lesson__photo" width="770" height="546" src="img/img/trial-lesson@1x.png" srcset="img/img/trial-lesson@2x.png 2x" alt="Just do it">
                             </picture>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="advantages">
+            <section class="advantages background-section background-section--bottom-wave">
                 <div class="container-xl">
                     <div class="row">
                         <div
                             class="advantages__wrapper col-12 col-lg-7 col-xl-6 d-flex flex-column flex-wrap align-items-center order-lg-0 order-2">
-                            <div class="advantages__item me-0 me-sm-3">
-                                <img class="advantages__icon" src="img/SVG/teacher.svg" alt="Опытные наставники">
+                            <a class="advantages__item me-0 me-sm-3" href="#">
+                                <div class="advantages__icon advantages__icon--teacher"></div>
                                 <h4 class="advantages__subtitle">Опытные наставники</h4>
                                 <p class="advantages__text">Дипломированные преподаватели с большим багажом
                                     знаний
                                     и опытом работы не менее 3 лет</p>
-                            </div>
-                            <div class="advantages__item order-sm-3 mt-sm-auto me-0 me-sm-3">
-                                <img class="advantages__icon" src="img/SVG/intermediary.svg" alt="Эффективная методика">
+                            </a>
+                            <a class="advantages__item order-sm-3 mt-sm-auto me-0 me-sm-3" href="#">
+                                <div class="advantages__icon advantages__icon--intermediary"></div>
                                 <h4 class="advantages__subtitle">Эффективная методика</h4>
                                 <p class="advantages__text">Обучение направлено на живое общение. 80% времени
                                     уделяем разговорной практике.</p>
-                            </div>
-                            <div class="advantages__item order-sm-2 me-0 me-sm-3">
-                                <img class="advantages__icon" src="img/SVG/graduation.svg" alt="Интересное обучение">
+                            </a>
+                            <a class="advantages__item order-sm-2 me-0 me-sm-3" href="#">
+                                <div class="advantages__icon advantages__icon--graduation"></div>
                                 <h4 class="advantages__subtitle">Интересное обучение</h4>
                                 <p class="advantages__text">Смотрим любимые видео, слушаем и переводим песни,
                                     разбираем статьи на английском</p>
-                            </div>
-                            <div class="advantages__item order-sm-4 me-0 me-sm-3">
-                                <img class="advantages__icon" src="img/SVG/third-party.svg" alt="Небольшие группы">
+                            </a>
+                            <a class="advantages__item order-sm-4 me-0 me-sm-3" href="#">
+                                <div class="advantages__icon advantages__icon--third-party"></div>
                                 <h4 class="advantages__subtitle">Небольшие группы</h4>
                                 <p class="advantages__text">Небольшие группы позволяют преподавателю уделять
                                     максимум внимания каждому. </p>
-                            </div>
+                            </a>
                             <a class="button d-inline-block d-sm-none" href="#">Выбрать программу</a>
                         </div>
                         <div class="col-12 col-lg-5 col-xl-6 d-flex justify-content-center align-items-center">
@@ -267,7 +270,6 @@
                     </div>
                 </div>
             </section>
-
         </main>
         <footer class="footer">
             <div class="footer__container container-xl d-flex flex-column justify-content-between">
@@ -298,7 +300,7 @@
                         <p class="footer__questions-form-text">Мы всегда рады на них ответить</p>
                         <form class="footer__form d-flex flex-column" action="#">
                             <label class="footer__form-label footer__form-label--name">
-                                <input class="footer__input" type="name" name="name" placeholder="Введите ваше имя">
+                                <input class="footer__input" type="text" name="name" placeholder="Введите ваше имя">
                             </label>
                             <label class="footer__form-label footer__form-label--phone">
                                 <input class="footer__input" type="tel" name="phone" placeholder="Введите ваш телефон">

@@ -29,22 +29,22 @@
                                 <a class="navigation__link" href="about.html">О нас</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Курсы</a>
+                                <a class="navigation__link" href="courses.html">Курсы</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Наш справочник</a>
+                                <a class="navigation__link" href="unique-guide.html">Наш справочник</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="#">Спецпредложения</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Отзывы</a>
+                                <a class="navigation__link" href="reviews.html">Отзывы</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="price.html">Цены</a>
                             </li>
                             <li class="navigation__item">
-                                <a class="navigation__link" href="#">Контакты</a>
+                                <a class="navigation__link" href="contacts.html">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -79,7 +79,7 @@
             </div>
         </header>
         <main class="page__main">
-            <section class="courses section background-section background-section--bottom-wave">
+            <section class="section section--top background-section background-section--bottom-wave">
                 <div class="section__container container-xl">
                     <div class="section__inner section__inner--max">
                         <div class="page__navigation mb-4 d-none d-md-block">
@@ -95,7 +95,8 @@
                             /
                             <a class="page__navigation-link page__navigation-link--active p-2">Курсы</a>
                         </div>
-                        <picture class="section__photo">
+                        <picture class="section__photo section__photo--2nd-background">
+                            <source type="image/webp" srcset="img/img/courses@1x.webp 1x, img/img/courses@2x.webp 2x">
                             <img class="section__img" src="img/img/courses@1x.png" srcset="img/img/courses@2x.png 2x"
                                 width="582" height="568" alt="Курсы">
                         </picture>
@@ -115,7 +116,7 @@
                     </div>
                 </div>
             </section>
-            <section class="courses-list">
+            <section class="courses-list pt-sm-4">
                 <div class="container-xl">
                     <h3 class="courses-list__title h3">Выберите то, что вам необходимо</h3>
                     <div class="row d-flex">
@@ -189,6 +190,7 @@
                         <div class="unique-courses__wrapper col-12 col-md-6">
                             <figure class="unique-courses__figure">
                                 <picture>
+                                    <source type="image/webp" srcset="img/img/unique-courses-left@1x.webp 1x, img/img/unique-courses-left@2x.webp 2x">
                                     <img class="unique-courses__photo" width="570" height="370"
                                         src="img/img/unique-courses-left@1x.jpg"
                                         srcset="img/img/unique-courses-left@2x.jpg 2x" alt="Уникальный курс">
@@ -204,6 +206,7 @@
                         <div class="unique-courses__wrapper col-12 col-md-6">
                             <figure class="unique-courses__figure">
                                 <picture>
+                                    <source type="image/webp" srcset="img/img/unique-courses-right@1x.webp 1x, img/img/unique-courses-right@2x.webp 2x">
                                     <img class="unique-courses__photo" width="570" height="370"
                                         src="img/img/unique-courses-right@1x.jpg"
                                         srcset="img/img/unique-courses-right@2x.jpg 2x" alt="Уникальный курс">
@@ -249,7 +252,7 @@
                         <p class="footer__questions-form-text">Мы всегда рады на них ответить</p>
                         <form class="footer__form d-flex flex-column" action="#">
                             <label class="footer__form-label footer__form-label--name">
-                                <input class="footer__input" type="name" name="name" placeholder="Введите ваше имя">
+                                <input class="footer__input" type="text" name="name" placeholder="Введите ваше имя">
                             </label>
                             <label class="footer__form-label footer__form-label--phone">
                                 <input class="footer__input" type="tel" name="phone" placeholder="Введите ваш телефон">

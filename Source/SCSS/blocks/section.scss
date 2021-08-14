@@ -1,4 +1,12 @@
 .section {
+    &--top {
+        padding-top: 140px;
+
+        @media (max-width: $display-md-max) {
+            padding-top: 80px;
+        }
+    }
+
     &__container {
         display: grid;
         grid-template-rows: auto auto;

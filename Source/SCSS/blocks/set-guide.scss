@@ -1,0 +1,31 @@
+.set-guide {
+    padding: 50px 0;
+
+    @media (max-width: $display-lg-max) {
+        padding: 25px 0;
+    }
+
+    &__title {
+        max-width: 290px;
+        margin-bottom: 35px;
+    }
+
+    &__item {
+        padding: 50px 20px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 25px rgba(44, 43, 43, 0.2);
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__price {
+        @include text-medium;
+
+        margin: 30px 0;
+        font-size: 28px;
+        color: $main-color;
+    }
+}

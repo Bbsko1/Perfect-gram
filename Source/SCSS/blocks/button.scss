@@ -11,6 +11,13 @@
     background: linear-gradient(180deg, #ffe175 0%, #ffc01b 100%);
     border: none;
     border-radius: 8px;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+        color: $main-color;
+        transform: scale(1.1);
+    }
 
     @media (max-width: $display-sm-max) {
         width: 100%;

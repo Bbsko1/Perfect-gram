@@ -19,5 +19,11 @@
     &__link {
         display: block;
         padding: 5px;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            color: rgba($color: $main-color, $alpha: 0.6);
+        }
     }
 }
