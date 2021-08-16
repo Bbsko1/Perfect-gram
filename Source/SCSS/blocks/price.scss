@@ -1,12 +1,5 @@
 .price {
     padding-top: 140px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-
-    &::-webkit-scrollbar {
-        width: 0;
-    }
 
     @media (max-width: $display-md-max) {
         padding-top: 100px;
@@ -24,6 +17,16 @@
 
         @media (max-width: $display-md-max) {
             font-size: 25px;
+        }
+    }
+
+    &__wrapper {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            width: 0;
         }
     }
 

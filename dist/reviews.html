@@ -10,285 +10,278 @@
 </head>
 
 <body class="page">
-    <div class="page__wrapper">
-        <header class="header">
-            <div class="header__container container-xl d-flex  justify-content-between align-items-center">
-                <a class="header__logo-link" href="index.html">
-                    <picture>
-                        <img class="header__logo-img" src="img/img/logo@1x.png" srcset="img/img/logo@2x.png 2x"
-                            alt="Логотип" width="130" height="85">
-                    </picture>
-                </a>
-                <button class="header__burger d-block d-xl-none">
-                    <span class="visually-hidden">Открыть меню</span>
-                </button>
-                <div class="header__menu">
-                    <nav class="navigation">
-                        <ul class="navigation__list d-flex flex-column flex-xl-row flex-wrap">
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="about.html">О нас</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="courses.html">Курсы</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="unique-guide.html">Наш справочник</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Спецпредложения</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="reviews.html">Отзывы</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="price.html">Цены</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="contacts.html">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__menu-social d-xl-none">
-                        <h4 class="header__menu-social-title">Мы в социальных сетях!</h4>
-                        <div class="header__menu-social-wrap d-flex justify-content-between">
-                            <a class="header__menu-social-icon header__menu-social-icon--facebook" href="#">
+    <header class="header">
+        <div class="header__container container-xl d-flex  justify-content-between align-items-center">
+            <a class="header__logo-link" href="index.html">
+                <picture>
+                    <img class="header__logo-img" src="img/img/logo@1x.png" srcset="img/img/logo@2x.png 2x"
+                        alt="Логотип" width="130" height="85">
+                </picture>
+            </a>
+            <button class="header__burger d-block d-xl-none">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="header__menu">
+                <nav class="navigation">
+                    <ul class="navigation__list d-flex flex-column flex-xl-row flex-wrap">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="about.html">О нас</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="courses.html">Курсы</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="unique-guide.html">Наш справочник</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Спецпредложения</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="reviews.html">Отзывы</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="price.html">Цены</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__menu-social d-xl-none">
+                    <h4 class="header__menu-social-title">Мы в социальных сетях!</h4>
+                    <div class="header__menu-social-wrap d-flex justify-content-between">
+                        <a class="header__menu-social-icon header__menu-social-icon--facebook" href="#">
+                            <span class="visually-hidden">facebook</span>
+                        </a>
+                        <a class="header__menu-social-icon header__menu-social-icon--instagram" href="#">
+                            <span class="visually-hidden">instagram</span>
+                        </a>
+                        <a class="header__menu-social-icon header__menu-social-icon--vk" href="#">
+                            <span class="visually-hidden">vkontakte</span>
+                        </a>
+                    </div>
+                    <div class="header__contact-menu">
+                        <p>Телефон</p>
+                        <a class="header__contact-phone"
+                            href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__contacts d-flex align-items-center">
+                <a class="header__phone d-none d-xl-block"
+                    href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
+                <a class="header__social header__social--whatsapp" href="#"><span
+                        class="visually-hidden">Whatsapp</span></a>
+                <a class="header__social header__social--skype" href="#"><span class="visually-hidden">Skype</span></a>
+            </div>
+        </div>
+    </header>
+    <main class="page__main pt-5">
+        <div class="container-xl pt-5">
+            <div class="page__navigation mb-4 pt-xl-5">
+                <a class="page__navigation-link p-2" href="index.html">Главная</a>
+                /
+                <a class="page__navigation-link page__navigation-link--active p-2">Отзывы</a>
+            </div>
+            <section class="reviews">
+                <div class="container-xl">
+                    <h3 class="reviews__title h3">Отзывы наших студентов</h3>
+                    <div class="reviews__top-slider">
+                        <div class="reviews__top-slider-item">
+                            <picture class="reviews__picture">
+                                <source type="image/webp"
+                                    srcset="img/img/reviews-1st@1x.webp 1x, img/img/reviews-1st@2x.webp 2x">
+                                <img class="reviews__photo" width="262" height="306" src="img/img/reviews-1st@1x.jpg"
+                                    srcset="img/img/reviews-1st@2x.jpg 2x" alt="Обозреватель">
+                            </picture>
+                        </div>
+                        <div class="reviews__top-slider-item">
+                            <picture class="reviews__picture">
+                                <source type="image/webp"
+                                    srcset="img/img/reviews-2nd@1x.webp 1x, img/img/reviews-2nd@2x.webp 2x">
+                                <img class="reviews__photo" width="262" height="306" src="img/img/reviews-2nd@1x.jpg"
+                                    srcset="img/img/reviews-2nd@2x.jpg 2x" alt="Обозреватель">
+                            </picture>
+                        </div>
+                        <div class="reviews__top-slider-item">
+                            <picture class="reviews__picture">
+                                <source type="image/webp"
+                                    srcset="img/img/reviews-3rd@1x.webp 1x, img/img/reviews-3rd@2x.webp 2x">
+                                <img class="reviews__photo" width="262" height="306" src="img/img/reviews-3rd@1x.jpg"
+                                    srcset="img/img/reviews-3rd@2x.jpg 2x" alt="Обозреватель">
+                            </picture>
+                        </div>
+                        <div class="reviews__top-slider-item">
+                            <picture class="reviews__picture">
+                                <source type="image/webp"
+                                    srcset="img/img/reviews-2nd@1x.webp 1x, img/img/reviews-2nd@2x.webp 2x">
+                                <img class="reviews__photo" width="262" height="306" src="img/img/reviews-2nd@1x.jpg"
+                                    srcset="img/img/reviews-2nd@2x.jpg 2x" alt="Обозреватель">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="reviews__bottom-slider">
+                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                            <p class="reviews__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий
+                                способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же
+                                начало
+                                повседневной работы по формированию позиции представляет собой интересный
+                                эксперимент
+                                проверки форм развития. Значимость этих проблем настолько очевидна.
+                            </p>
+                            <p class="reviews__reviewer-name">Наталья Иванова</p>
+                            <p class="reviews__reviewer-profession">Программист</p>
+                        </div>
+                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                            <p class="reviews__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий
+                                способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же
+                                начало
+                                повседневной работы по формированию позиции представляет собой интересный
+                                эксперимент
+                                проверки форм развития. Значимость этих проблем настолько очевидна.
+                            </p>
+                            <p class="reviews__reviewer-name">Наталья Иванова</p>
+                            <p class="reviews__reviewer-profession">Программист</p>
+                        </div>
+                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                            <p class="reviews__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий
+                                способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же
+                                начало
+                                повседневной работы по формированию позиции представляет собой интересный
+                                эксперимент
+                                проверки форм развития. Значимость этих проблем настолько очевидна.
+                            </p>
+                            <p class="reviews__reviewer-name">Наталья Иванова</p>
+                            <p class="reviews__reviewer-profession">Программист</p>
+                        </div>
+                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                            <p class="reviews__text">
+                                Задача организации, в особенности же реализация намеченных плановых заданий
+                                способствует
+                                подготовки и реализации новых предложений. Задача организации, в особенности же
+                                начало
+                                повседневной работы по формированию позиции представляет собой интересный
+                                эксперимент
+                                проверки форм развития. Значимость этих проблем настолько очевидна.
+                            </p>
+                            <p class="reviews__reviewer-name">Наталья Иванова</p>
+                            <p class="reviews__reviewer-profession">Программист</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section py-5">
+                <div class="section__container">
+                    <div class="section__inner section__inner--max">
+                        <h3 class="section__title section__title--main-color section__title--mini h3 ms-0">
+                            Оставьте свой отзыв
+                        </h3>
+                    </div>
+                    <div class="section__photo-wrap section__photo-wrap--left">
+                        <picture class="section__photo">
+                            <source type="image/webp" srcset="img/img/review@1x.webp 1x, img/img/review@2x.webp 2x">
+                            <img class="section__img" src="img/img/review@1x.png" srcset="img/img/review@2x.png 2x"
+                                width="582" height="568" alt="Контакты">
+                        </picture>
+                    </div>
+                    <div class="section__wrapper section__wrapper section__wrapper--max">
+                        <p class="section__text section__text">
+                            Вы можете оставить отзыв о работе нашей Студии, использую учетную запись Facebook или
+                            отправить нам на почту, заполнив форму ниже. Будем рады любому отклику о нашей работе.
+                            Мы обязательно учтем любую критику и будем признательны за слова благодарности.
+                        </p>
+                        <div class="section__box">
+                            <form class="section__form d-flex flex-column" action="#">
+                                <label class="section__form-label section__form-label--name">
+                                    <input class="section__input" type="text" name="name"
+                                        placeholder="Введите ваше имя">
+                                </label>
+                                <label class="section__form-label section__form-label--review">
+                                    <input class="section__input" type="text" name="review" placeholder="Ваш отзыв">
+                                </label>
+                                <button class="section__form-button button">Отправить</button>
+                                <p class="section__form-agreement">
+                                    Нажимая кнопку “Отправить”, вы соглашаетесь с условиями передачи данных
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer d-flex align-items-end">
+        <div class="footer__container container-xl d-flex flex-column justify-content-between">
+            <div class="footer__wrapper d-flex flex-column flex-lg-row justify-content-between">
+                <div class="footer__contacts order-2 order-lg-0">
+                    <h3 class="footer__contacts-title h3">Наши контакты</h3>
+                    <div class="footer__contacts-wrap d-flex flex-column">
+                        <p class="footer__contacts-name">Телефон</p>
+                        <a class="footer__contacts-link"
+                            href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
+                    </div>
+                    <div class="footer__contacts-wrap d-flex flex-column">
+                        <p class="footer__contacts-name">Электронная почта</p>
+                        <a class="footer__contacts-link" href="mailto:info@pg-studio.ru">info@pg-studio.ru</a>
+                    </div>
+                    <div class="footer__contacts-wrap d-flex flex-column">
+                        <p class="footer__contacts-name">Наши партнеры</p>
+                        <a class="footer__contacts-link footer__contacts-link--company" href="#">Название
+                            компании</a>
+                        <a class="footer__contacts-link footer__contacts-link--company" href="#">Название
+                            компании</a>
+                        <a class="footer__contacts-link footer__contacts-link--company" href="#">Название
+                            компании</a>
+                    </div>
+                </div>
+                <div class="footer__questions-form align-self-end align-self-lg-stretch">
+                    <h3 class="footer__questions-form-title h3">Остались вопросы?</h3>
+                    <p class="footer__questions-form-text">Мы всегда рады на них ответить</p>
+                    <form class="footer__form d-flex flex-column" action="#">
+                        <label class="footer__form-label footer__form-label--name">
+                            <input class="footer__input" type="text" name="name" placeholder="Введите ваше имя">
+                        </label>
+                        <label class="footer__form-label footer__form-label--phone">
+                            <input class="footer__input" type="tel" name="phone" placeholder="Введите ваш телефон">
+                        </label>
+                        <button class="footer__form-button button">Отправить</button>
+                        <p class="footer__form-agreement">
+                            Нажимая кнопку “Отправить”, вы соглашаетесь
+                            <br>
+                            с условиями передачи данных
+                        </p>
+                    </form>
+                    <div class="footer__social">
+                        <h4 class="footer__social-title">Мы в социальных сетях!</h4>
+                        <div class="footer__social-wrap d-flex justify-content-between">
+                            <a class="footer__social-icon footer__social-icon--facebook" href="#">
                                 <span class="visually-hidden">facebook</span>
                             </a>
-                            <a class="header__menu-social-icon header__menu-social-icon--instagram" href="#">
+                            <a class="footer__social-icon footer__social-icon--instagram" href="#">
                                 <span class="visually-hidden">instagram</span>
                             </a>
-                            <a class="header__menu-social-icon header__menu-social-icon--vk" href="#">
+                            <a class="footer__social-icon footer__social-icon--vk" href="#">
                                 <span class="visually-hidden">vkontakte</span>
                             </a>
                         </div>
-                        <div class="header__contact-menu">
-                            <p>Телефон</p>
-                            <a class="header__contact-phone"
-                                href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="header__contacts d-flex align-items-center">
-                    <a class="header__phone d-none d-xl-block"
-                        href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
-                    <a class="header__social header__social--whatsapp" href="#"><span
-                            class="visually-hidden">Whatsapp</span></a>
-                    <a class="header__social header__social--skype" href="#"><span
-                            class="visually-hidden">Skype</span></a>
-                </div>
-            </div>
-        </header>
-        <main class="page__main pt-5">
-            <div class="container-xl pt-5">
-                <div class="page__navigation mb-4 pt-xl-5">
-                    <a class="page__navigation-link p-2" href="index.html">Главная</a>
-                    /
-                    <a class="page__navigation-link page__navigation-link--active p-2">Отзывы</a>
-                </div>
-                <section class="reviews">
-                    <div class="container-xl">
-                        <h3 class="reviews__title h3">Отзывы наших студентов</h3>
-                        <div class="reviews__top-slider">
-                            <div class="reviews__top-slider-item">
-                                <picture class="reviews__picture">
-                                    <source type="image/webp"
-                                        srcset="img/img/reviews-1st@1x.webp 1x, img/img/reviews-1st@2x.webp 2x">
-                                    <img class="reviews__photo" width="262" height="306"
-                                        src="img/img/reviews-1st@1x.jpg" srcset="img/img/reviews-1st@2x.jpg 2x"
-                                        alt="Обозреватель">
-                                </picture>
-                            </div>
-                            <div class="reviews__top-slider-item">
-                                <picture class="reviews__picture">
-                                    <source type="image/webp"
-                                        srcset="img/img/reviews-2nd@1x.webp 1x, img/img/reviews-2nd@2x.webp 2x">
-                                    <img class="reviews__photo" width="262" height="306"
-                                        src="img/img/reviews-2nd@1x.jpg" srcset="img/img/reviews-2nd@2x.jpg 2x"
-                                        alt="Обозреватель">
-                                </picture>
-                            </div>
-                            <div class="reviews__top-slider-item">
-                                <picture class="reviews__picture">
-                                    <source type="image/webp"
-                                        srcset="img/img/reviews-3rd@1x.webp 1x, img/img/reviews-3rd@2x.webp 2x">
-                                    <img class="reviews__photo" width="262" height="306"
-                                        src="img/img/reviews-3rd@1x.jpg" srcset="img/img/reviews-3rd@2x.jpg 2x"
-                                        alt="Обозреватель">
-                                </picture>
-                            </div>
-                            <div class="reviews__top-slider-item">
-                                <picture class="reviews__picture">
-                                    <source type="image/webp"
-                                        srcset="img/img/reviews-2nd@1x.webp 1x, img/img/reviews-2nd@2x.webp 2x">
-                                    <img class="reviews__photo" width="262" height="306"
-                                        src="img/img/reviews-2nd@1x.jpg" srcset="img/img/reviews-2nd@2x.jpg 2x"
-                                        alt="Обозреватель">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="reviews__bottom-slider">
-                            <div class="reviews__wrapper d-flex flex-column align-items-center">
-                                <p class="reviews__text">
-                                    Задача организации, в особенности же реализация намеченных плановых заданий
-                                    способствует
-                                    подготовки и реализации новых предложений. Задача организации, в особенности же
-                                    начало
-                                    повседневной работы по формированию позиции представляет собой интересный
-                                    эксперимент
-                                    проверки форм развития. Значимость этих проблем настолько очевидна.
-                                </p>
-                                <p class="reviews__reviewer-name">Наталья Иванова</p>
-                                <p class="reviews__reviewer-profession">Программист</p>
-                            </div>
-                            <div class="reviews__wrapper d-flex flex-column align-items-center">
-                                <p class="reviews__text">
-                                    Задача организации, в особенности же реализация намеченных плановых заданий
-                                    способствует
-                                    подготовки и реализации новых предложений. Задача организации, в особенности же
-                                    начало
-                                    повседневной работы по формированию позиции представляет собой интересный
-                                    эксперимент
-                                    проверки форм развития. Значимость этих проблем настолько очевидна.
-                                </p>
-                                <p class="reviews__reviewer-name">Наталья Иванова</p>
-                                <p class="reviews__reviewer-profession">Программист</p>
-                            </div>
-                            <div class="reviews__wrapper d-flex flex-column align-items-center">
-                                <p class="reviews__text">
-                                    Задача организации, в особенности же реализация намеченных плановых заданий
-                                    способствует
-                                    подготовки и реализации новых предложений. Задача организации, в особенности же
-                                    начало
-                                    повседневной работы по формированию позиции представляет собой интересный
-                                    эксперимент
-                                    проверки форм развития. Значимость этих проблем настолько очевидна.
-                                </p>
-                                <p class="reviews__reviewer-name">Наталья Иванова</p>
-                                <p class="reviews__reviewer-profession">Программист</p>
-                            </div>
-                            <div class="reviews__wrapper d-flex flex-column align-items-center">
-                                <p class="reviews__text">
-                                    Задача организации, в особенности же реализация намеченных плановых заданий
-                                    способствует
-                                    подготовки и реализации новых предложений. Задача организации, в особенности же
-                                    начало
-                                    повседневной работы по формированию позиции представляет собой интересный
-                                    эксперимент
-                                    проверки форм развития. Значимость этих проблем настолько очевидна.
-                                </p>
-                                <p class="reviews__reviewer-name">Наталья Иванова</p>
-                                <p class="reviews__reviewer-profession">Программист</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="section py-5">
-                    <div class="section__container">
-                        <div class="section__inner section__inner--max">
-                            <h3 class="section__title section__title--main-color section__title--mini h3 ms-0">
-                                Оставьте свой отзыв
-                            </h3>
-                        </div>
-                        <div class="section__photo-wrap section__photo-wrap--left">
-                            <picture class="section__photo">
-                                <source type="image/webp" srcset="img/img/review@1x.webp 1x, img/img/review@2x.webp 2x">
-                                <img class="section__img" src="img/img/review@1x.png" srcset="img/img/review@2x.png 2x"
-                                    width="582" height="568" alt="Контакты">
-                            </picture>
-                        </div>
-                        <div class="section__wrapper section__wrapper section__wrapper--max">
-                            <p class="section__text section__text">
-                                Вы можете оставить отзыв о работе нашей Студии, использую учетную запись Facebook или
-                                отправить нам на почту, заполнив форму ниже. Будем рады любому отклику о нашей работе.
-                                Мы обязательно учтем любую критику и будем признательны за слова благодарности.
-                            </p>
-                            <div class="section__box">
-                                <form class="section__form d-flex flex-column" action="#">
-                                    <label class="section__form-label section__form-label--name">
-                                        <input class="section__input" type="text" name="name"
-                                            placeholder="Введите ваше имя">
-                                    </label>
-                                    <label class="section__form-label section__form-label--review">
-                                        <input class="section__input" type="text" name="review" placeholder="Ваш отзыв">
-                                    </label>
-                                    <button class="section__form-button button">Отправить</button>
-                                    <p class="section__form-agreement">
-                                        Нажимая кнопку “Отправить”, вы соглашаетесь с условиями передачи данных
-                                    </p>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__container container-xl d-flex flex-column justify-content-between">
-                <div class="footer__wrapper d-flex flex-column flex-lg-row justify-content-between">
-                    <div class="footer__contacts order-2 order-lg-0">
-                        <h3 class="footer__contacts-title h3">Наши контакты</h3>
-                        <div class="footer__contacts-wrap d-flex flex-column">
-                            <p class="footer__contacts-name">Телефон</p>
-                            <a class="footer__contacts-link"
-                                href="tel:+79652093300">+7&nbsp;965&nbsp;209&nbsp;33&nbsp;00</a>
-                        </div>
-                        <div class="footer__contacts-wrap d-flex flex-column">
-                            <p class="footer__contacts-name">Электронная почта</p>
-                            <a class="footer__contacts-link" href="mailto:info@pg-studio.ru">info@pg-studio.ru</a>
-                        </div>
-                        <div class="footer__contacts-wrap d-flex flex-column">
-                            <p class="footer__contacts-name">Наши партнеры</p>
-                            <a class="footer__contacts-link footer__contacts-link--company" href="#">Название
-                                компании</a>
-                            <a class="footer__contacts-link footer__contacts-link--company" href="#">Название
-                                компании</a>
-                            <a class="footer__contacts-link footer__contacts-link--company" href="#">Название
-                                компании</a>
-                        </div>
-                    </div>
-                    <div class="footer__questions-form align-self-end align-self-lg-stretch">
-                        <h3 class="footer__questions-form-title h3">Остались вопросы?</h3>
-                        <p class="footer__questions-form-text">Мы всегда рады на них ответить</p>
-                        <form class="footer__form d-flex flex-column" action="#">
-                            <label class="footer__form-label footer__form-label--name">
-                                <input class="footer__input" type="text" name="name" placeholder="Введите ваше имя">
-                            </label>
-                            <label class="footer__form-label footer__form-label--phone">
-                                <input class="footer__input" type="tel" name="phone" placeholder="Введите ваш телефон">
-                            </label>
-                            <button class="footer__form-button button">Отправить</button>
-                            <p class="footer__form-agreement">
-                                Нажимая кнопку “Отправить”, вы соглашаетесь
-                                <br>
-                                с условиями передачи данных
-                            </p>
-                        </form>
-                        <div class="footer__social">
-                            <h4 class="footer__social-title">Мы в социальных сетях!</h4>
-                            <div class="footer__social-wrap d-flex justify-content-between">
-                                <a class="footer__social-icon footer__social-icon--facebook" href="#">
-                                    <span class="visually-hidden">facebook</span>
-                                </a>
-                                <a class="footer__social-icon footer__social-icon--instagram" href="#">
-                                    <span class="visually-hidden">instagram</span>
-                                </a>
-                                <a class="footer__social-icon footer__social-icon--vk" href="#">
-                                    <span class="visually-hidden">vkontakte</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__inner d-flex flex-column flex-sm-row justify-content-between">
-                    <a class="button mb-3 mb-sm-0" href="#">Оплатить</a>
-                    <div class="footer__copyright">
-                        <a class="footer__copyright-link" href="#">Политика конфедицильности</a>
-                        <p>2019-2021, Все права защищены</p>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class="footer__inner d-flex flex-column flex-sm-row justify-content-between">
+                <a class="button mb-3 mb-sm-0" href="#">Оплатить</a>
+                <div class="footer__copyright">
+                    <a class="footer__copyright-link" href="#">Политика конфедицильности</a>
+                    <p>2019-2021, Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.min.js"></script>
 </body>
 

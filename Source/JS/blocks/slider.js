@@ -8,8 +8,8 @@ $('.programs__slider').slick({
     centerPadding: "0px",
     accessibility: false,
     arrows: false,
-    /* autoplay: true,
-    autoplaySpeed: 2000, */
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [{
             breakpoint: 768,
             settings: {

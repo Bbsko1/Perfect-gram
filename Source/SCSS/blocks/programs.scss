@@ -15,6 +15,14 @@
         text-align: center;
     }
 
+    &__inner {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+
     &__wrap {
         @media (max-width: $display-xl-max) {
             margin-right: -65px;
@@ -84,7 +92,9 @@
             transition: 0.3s;
         }
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &--active {
             @include main-gradient;
 
             background-clip: text;

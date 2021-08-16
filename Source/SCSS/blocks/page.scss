@@ -1,6 +1,15 @@
 .page {
+    &--hidden {
+        @media (max-width: $display-xl-max) {
+            overflow: hidden;
+        }
+    }
+
     &__wrapper {
         position: relative;
+    }
+
+    &__inner {
         max-width: 1440px;
         margin: 0 auto;
     }
