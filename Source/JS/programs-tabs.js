@@ -16,6 +16,7 @@ programsLinks.forEach(function (link, i) {
 
         link.classList.add('programs__link--active');
         programsList[i].classList.add('programs__inner--active');
+        $('.programs__slider').slick("refresh");
     })
 });
 

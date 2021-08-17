@@ -120,6 +120,7 @@
     & .slick-track {
         display: flex;
         justify-content: space-between;
+        width: max-content;
     }
 
     & .slick-list {
